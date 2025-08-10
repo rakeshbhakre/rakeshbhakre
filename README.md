@@ -5,7 +5,7 @@
 
 ### 👨‍💻 About Me
 
-- 🎓 I'm a 3rd-year **Computer Engineering** student  
+- 🎓 I'm a final-year **Computer Engineering** student  
 - 💻 I enjoy working on **Web Development**, **AI/ML**, and solving **DSA problems** using **C++**
 - 🌱 Currently exploring deep concepts in **AI**, **ML**, and **React**
 - 📬 Reach me at: **tusharbhakre333@gmail.com**
