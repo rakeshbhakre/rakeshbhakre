@@ -1,11 +1,11 @@
 <h1 align="center">Hi 👋, I'm Rakesh Bhakre</h1>
-<h3 align="center">A passionate Computer Engineering student and developer</h3>
+<h3 align="center">A passionate Computer Engineering Student and Developer</h3>
 
 ---
 
 ### 👨‍💻 About Me
 
-- 🎓 I'm a final-year **Computer Engineering** student  
+- 🎓 I'm a final-year **Computer Engineering** Student  
 - 💻 I enjoy working on **Web Development**, **AI/ML**, and solving **DSA problems** using **C++**
 - 🌱 Currently exploring deep concepts in **AI**, **ML**, and **React**
 - 📬 Reach me at: **tusharbhakre333@gmail.com**
