@@ -20,7 +20,7 @@
 
 <div align="center">
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&pause=1000&color=7AA2F7&center=true&vCenter=true&width=720&lines=Full-stack+developer+%E2%80%94+Java+%C3%97+Spring+Boot+%C3%97+React;Computer-vision+nerd+%E2%80%94+YOLOv8+%2B+DeepSORT+%2B+OCR+%F0%9F%9A%A6;Hackathon+winner+%C2%B7+published+researcher;Currently+grinding%3A+DSA+%2B+System+Design;Open+to+SDE+roles+%E2%80%94+let%27s+build+something+great+%E2%9A%A1" alt="Typing SVG"/></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&pause=1000&color=7AA2F7&center=true&vCenter=true&width=720&lines=Full-Stack+Developer+%E2%80%94+Java+%C3%97+Spring+Boot+%C3%97+React;Computer-Vision+Nerd+%E2%80%94+YOLOv8+%2B+DeepSORT+%2B+OCR+%F0%9F%9A%A6;Hackathon+winner+%C2%B7+published+researcher;Currently+grinding%3A+DSA+%2B+System+Design;Open+to+SDE+roles+%E2%80%94+let%27s+build+something+great+%E2%9A%A1" alt="Typing SVG"/></a>
 
 </div>
 
