@@ -45,7 +45,7 @@
 - 🧠 **Focus Areas:** Backend Engineering · MERN apps · Real-time Computer-Vision Pipelines
 - 🌱 **Currently levelling up:** DSA in Java & System design
 - 🏆 **Hackathon Winner** & **Published Researcher** (details below 👇)
-- 🤝 **Open to:** SDE-1 / Backend / Full-stack roles
+- 🤝 **Open to:** SDE-1 / Backend / Full-Stack Roles
 
 <br clear="all"/>
 
