@@ -42,10 +42,10 @@
 
 - 🎓 **Computer Engineering (B.Tech, Class of 2026)** — Smt. Indira Gandhi College of Engineering (University of Mumbai)
 - 💼 **Ex-SDE Intern @ Quibits IT Solutions** — shipped features with **Java × Spring Boot × React.js**, wired up REST APIs & responsive dashboards, collaborated in Git + Agile workflows
-- 🧠 **Focus areas:** backend engineering · MERN apps · real-time computer-vision pipelines
-- 🌱 **Currently levelling up:** DSA in Java & system design
-- 🏆 **Hackathon winner** & **published researcher** (details below 👇)
-- 🤝 **Open to:** SDE-1 / backend / full-stack roles
+- 🧠 **Focus Areas:** Backend Engineering · MERN apps · Real-time Computer-Vision Pipelines
+- 🌱 **Currently levelling up:** DSA in Java & System design
+- 🏆 **Hackathon Winner** & **Published Researcher** (details below 👇)
+- 🤝 **Open to:** SDE-1 / Backend / Full-stack roles
 
 <br clear="all"/>
 
@@ -55,7 +55,7 @@
 name:     Rakesh Bhakre
 based_in: Navi Mumbai, MH, IN
 status:
-  seeking:  SDE roles — backend / full-stack / applied-AI
+  seeking:  SDE roles — backend/full-stack / applied-AI
   learning: [ system-design, distributed backends ]
   grinding: DSA in Java ☕
 ships:
@@ -87,7 +87,7 @@ fun_fact: >
 <br/>
 <img src="https://skillicons.dev/icons?i=mysql,mongodb,sqlite,firebase&theme=dark&perline=10" alt="databases"/>
 
-**`// computer vision / ai`**
+**`// computer vision/ai`**
 <br/>
 <img src="https://skillicons.dev/icons?i=opencv&theme=dark" alt="opencv"/>
 <img src="https://img.shields.io/badge/YOLOv8-00FFFF?style=for-the-badge&labelColor=0d1117&logoColor=00FFFF" alt="YOLOv8" height="28"/>
