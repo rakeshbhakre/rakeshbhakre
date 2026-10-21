@@ -1,0 +1,17 @@
+{
+  "name": "Rakesh Bhakre | Software Engineer",
+  "short_name": "Rakesh Bhakre",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#F4F0EA",
+  "theme_color": "#F4F0EA",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
