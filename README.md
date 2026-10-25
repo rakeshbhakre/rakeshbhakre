@@ -1,189 +1,225 @@
-<!-- ══════════════════════════════════════════════════════════════════ -->
-<!--  ⚡ ULTRA PROFILE README — @rakeshbhakre                            -->
-<!--  Drop this README.md into: github.com/rakeshbhakre/rakeshbhakre     -->
-<!--                                                                      -->
-<!--  SETUP NOTES:                                                        -->
-<!--  1. 🐍 The contribution-snake needs a GitHub Action: copy the        -->
-<!--     provided `snake.yml` into `.github/workflows/snake.yml` of your  -->
-<!--     profile repo and run the Action once. (Remove the snake block    -->
-<!--     if you'd rather skip it.)                                        -->
-<!--  2. Replace the two [Add project link] placeholders when the Kawai   -->
-<!--     and hackathon project repos go public.                           -->
-<!--  3. Add a portfolio link in the CONNECT section when ready.          -->
-<!-- ══════════════════════════════════════════════════════════════════ -->
-
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=venom&height=230&text=RAKESH%20BHAKRE&fontSize=64&color=gradient&customColorList=16,19,24,12,8&animation=twinkling&fontColor=c0caf5&desc=Software%20Developer%20%7C%20Java%20%E2%80%A2%20Spring%20Boot%20%E2%80%A2%20React%20%E2%80%A2%20MERN%20%7C%20Computer%20Vision&descSize=16&descAlignY=82" width="100%" alt="Rakesh Bhakre — Software Developer"/>
+<h1 align="center">Rakesh Bhakre</h1>
+
+<h3 align="center">
+  Software Engineer | Backend & Full-Stack Development
+</h3>
+
+<p align="center">
+  Java · Spring Boot · React · Node.js · Application Security · Applied AI
+</p>
+<p>
+  <a href="https://rakeshbhakre.in"><img src="https://img.shields.io/badge/Portfolio-Visit-58A6FF?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
+  <a href="https://www.linkedin.com/in/rakesh-bhakre/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://github.com/rakeshbhakre"><img src="https://img.shields.io/badge/GitHub-Explore-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+  <a href="mailto:rakeshbhakre00@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+</p>
+
+**I build software that solves real workflow problems — from full-stack products to security tooling and applied AI.**
 
 </div>
 
+---
+
+## About Me
+
+I'm a 2026 Computer Science and Engineering graduate with hands-on experience in full-stack development, backend APIs, application security, and computer vision. I enjoy taking a problem from its practical requirements through implementation, debugging, and delivery.
+
+- **Software Developer Intern at Quibits:** Built application features with Java, Spring Boot, and React.js; integrated REST APIs and developed responsive dashboards.
+- **Application security:** Worked on GARUDX, a platform for source-code vulnerability scanning, dependency analysis, and hardcoded-secret detection.
+- **Computer vision:** Built a traffic-surveillance system using YOLOv8, DeepSORT, and OCR, resulting in published research.
+- **Hackathons:** Winner of the Multiverse of Tech Hackathon and 1st Runner-Up at Hackverse Spacetech 2026.
+- **Outside software:** Coordinated 100+ events, working with teams of 5–30 people and clients including Amazon and Microsoft.
+
+I'm particularly interested in **backend and full-stack engineering**, and I keep sharpening my Java, Data Structures and Algorithms, and software design fundamentals.
+
+## Tech Stack
+
 <div align="center">
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&pause=1000&color=7AA2F7&center=true&vCenter=true&width=720&lines=Full-Stack+Developer+%E2%80%94+Java+%C3%97+Spring+Boot+%C3%97+React;Computer-Vision+Nerd+%E2%80%94+YOLOv8+%2B+DeepSORT+%2B+OCR+%F0%9F%9A%A6;Hackathon+winner+%C2%B7+published+researcher;Currently+grinding%3A+DSA+%2B+System+Design;Open+to+SDE+roles+%E2%80%94+let%27s+build+something+great+%E2%9A%A1" alt="Typing SVG"/></a>
+**Languages**
+
+<img src="https://skillicons.dev/icons?i=java,python,javascript,cpp&theme=dark" alt="Java, Python, JavaScript, and C++" />
+
+**Frameworks and Libraries**
+
+<img src="https://skillicons.dev/icons?i=spring,react,nodejs,express,fastapi,opencv&theme=dark" alt="Spring Boot, React, Node.js, Express, FastAPI, and OpenCV" />
+
+**Databases and Developer Tools**
+
+<img src="https://skillicons.dev/icons?i=mongodb,mysql,sqlite,git,github,docker,postman&theme=dark" alt="MongoDB, MySQL, SQLite, Git, GitHub, Docker, and Postman" />
 
 </div>
 
+**Backend:** REST APIs · API Integration · Asynchronous Job Processing · Database Design
+
+**AI / ML:** YOLOv8 · DeepSORT · EasyOCR · NumPy · scikit-learn · Anomaly Detection
+
+**Core Concepts:** Data Structures & Algorithms · Object-Oriented Programming · DBMS · Operating Systems · Computer Networks
+
+---
+
+## Featured Projects
+
+### 1. GARUDX — Application Security Platform
+
+A full-stack security platform developed to bring source-code security checks into one workflow. GARUDX automates vulnerability scanning, dependency analysis, and hardcoded-secret detection, then presents findings through a web dashboard.
+
+**What I worked on**
+- Built Node.js and Express APIs for project uploads, scan orchestration, vulnerability normalization, MongoDB persistence, and report generation.
+- Developed a React dashboard for scan progress, vulnerability analytics, findings management, scan history, and downloadable reports.
+- Integrated Semgrep, OSV-Scanner, and Gitleaks into the scanning workflow.
+
+**Tech:** React.js · Node.js · Express.js · MongoDB · Semgrep · OSV-Scanner · Gitleaks
+
+<p>
+  <a href="https://securityloyals.com/products/garudx">
+    <img src="https://img.shields.io/badge/Explore-GARUDX-58A6FF?style=for-the-badge" alt="Explore GARUDX" />
+  </a>
+</p>
+
+### 2. Intelligent Traffic Surveillance System
+
+A computer-vision system that analyzes CCTV/RTSP video and detects five traffic violations. The pipeline combines vehicle detection and tracking with signal analysis, number-plate text recognition, and speed estimation.
+
+**Highlights**
+- Used YOLOv8 and DeepSORT for vehicle detection and tracking.
+- Combined homography-based speed estimation, HSV signal detection, and EasyOCR.
+- Reported **18–22 FPS on CPU** and approximately **3.2 km/h speed-estimation error** in the project evaluation.
+- Developed a FastAPI backend with SQLite storage.
+- Published research based on the project.
+
+**Tech:** Python · YOLOv8 · DeepSORT · OpenCV · EasyOCR · FastAPI · SQLite
+
+<p>
+  <a href="https://github.com/rakeshbhakre/Intelligent-Traffic-Surveillance-System-">
+    <img src="https://img.shields.io/badge/View%20Source-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="Traffic surveillance source code" />
+  </a>
+</p>
+
+### 3. RestoQR — Restaurant Ordering & Operations Platform
+
+A live restaurant platform connecting customer QR ordering with kitchen operations, cashier/POS workflows, billing, inventory, and administration.
+
+My work has focused on improving end-to-end workflows across customer, kitchen, cashier, and management operations, reducing manual steps and improving operational efficiency.
+
+**Product Areas:** QR Ordering · Kitchen Operations · POS and Billing · Inventory · Administration
+
+<p>
+  <a href="https://restoqr.quibits.in/">
+    <img src="https://img.shields.io/badge/Visit%20Live%20Project-RestoQR-2EA44F?style=for-the-badge" alt="Visit RestoQR" />
+  </a>
+</p>
+
+### 4. AEGIS — Spacecraft Health Monitoring
+
+Developed for **Hackverse Spacetech 2026**, AEGIS explores spacecraft health monitoring through anomaly detection and explainable diagnostics.
+
+**Highlights**
+- Used Isolation Forest and NumPy-based autoencoders to identify unusual system behaviour.
+- Implemented explainable root-cause analysis and digital-twin fault simulation.
+- Included safety-validated mitigation recommendations.
+- Achieved **1st Runner-Up** at Hackverse Spacetech 2026.
+
+**Tech:** Python · NumPy · Isolation Forest · Autoencoders · Anomaly Detection
+
+### 5. Construction Cost & Timeline Estimator
+
+A MERN-stack hackathon project that estimates construction materials, cost, and project timelines from 3D models.
+
+The project won the **Multiverse of Tech Hackathon** among approximately 40 competing teams.
+
+**Tech:** MongoDB · Express.js · React.js · Node.js
+
+<p>
+  <a href="https://drive.google.com/file/d/1ED60M5jcTMiC54yLk1Ymrgy4v06Lid5U/view?usp=sharing">
+    <img src="https://img.shields.io/badge/View%20Achievement-Hackathon%20Certificate-FFD700?style=for-the-badge" alt="Hackathon winner certificate" />
+  </a>
+</p>
+
+---
+
+## Experience
+
+### Software Developer Intern — Quibits
+
+**January 2025 – June 2025 · Navi Mumbai, Maharashtra**
+
+- Developed full-stack application features using Java, Spring Boot, and React.js.
+- Engineered RESTful APIs for reliable frontend–backend integration.
+- Built responsive dashboards for reporting and user management.
+- Debugged application issues and collaborated with developers using Git and Agile practices.
+
+<p>
+  <a href="https://drive.google.com/file/d/1RfYJI8Z_oCsdDIEN9x53-JEI5ndu7pF9/view?usp=sharing">
+    <img src="https://img.shields.io/badge/View-Internship%20Document-58A6FF?style=for-the-badge" alt="Quibits internship document" />
+  </a>
+</p>
+
+### Freelance Event Coordinator & Planner — Grandeur Events
+
+**December 2023 – May 2025 · Mumbai, Maharashtra**
+
+- Coordinated **100+ events**, managing logistics, vendors, and on-ground execution.
+- Led teams of 5–30 volunteers and handled stakeholder communication and resource allocation.
+- Supported events for clients including Amazon and Microsoft.
+
+---
+
+## Education & Achievements
+
+**Bachelor of Computer Science and Engineering — 2026**
+
+Smt. Indira Gandhi College of Engineering, Ghansoli  
+Autonomous Institute affiliated with the University of Mumbai.
+
+**Hackathon Achievements**
+
+- **Winner — Multiverse of Tech Hackathon, 2026:** MERN-based construction cost and timeline estimator; approximately 40 competing teams.
+- **1st Runner-Up — Hackverse Spacetech Hackathon, 2026:** AEGIS spacecraft health-monitoring project.
+
+**Research**
+
+- Published research: *Intelligent Traffic Surveillance System*.
+
+---
+
+## GitHub Activity
+
 <div align="center">
 
-![Profile Views](https://komarev.com/ghpvc/?username=rakeshbhakre&label=VIEWS&color=7aa2f7&style=for-the-badge&labelColor=0d1117)
-[![Followers](https://img.shields.io/github/followers/rakeshbhakre?label=FOLLOWERS&style=for-the-badge&color=7aa2f7&labelColor=0d1117)](https://github.com/rakeshbhakre?tab=followers)
-[![Stars](https://img.shields.io/github/stars/rakeshbhakre?label=STARS&style=for-the-badge&color=7aa2f7&labelColor=0d1117)](https://github.com/rakeshbhakre?tab=repositories)
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=rakeshbhakre&show_icons=true&theme=github_dark&hide_border=true" alt="GitHub profile statistics" />
 
-<sub>📍 Navi Mumbai, India &nbsp;·&nbsp; 📫 rakeshbhakre00@gmail.com &nbsp;·&nbsp; ⚡ he builds, he ships</sub>
+<img height="165" src="https://streak-stats.demolab.com?user=rakeshbhakre&theme=github-dark-blue&hide_border=true" alt="GitHub contribution streak" />
+
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rakeshbhakre&layout=compact&theme=github_dark&hide_border=true&langs_count=8" alt="Most-used programming languages" />
 
 </div>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
+---
 
-## 🧬 About Me
+## Let's Connect
 
-<img align="right" width="300" src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" alt="coding gif"/>
-
-- 🎓 **Computer Engineering (B.Tech, Class of 2026)** — Smt. Indira Gandhi College of Engineering (University of Mumbai)
-- 💼 **Ex-SDE Intern @ Quibits IT Solutions** — shipped features with **Java × Spring Boot × React.js**, wired up REST APIs & responsive dashboards, collaborated in Git + Agile workflows
-- 🧠 **Focus Areas:** Backend Engineering · MERN apps · Real-time Computer-Vision Pipelines
-- 🌱 **Currently levelling up:** DSA in Java & System design
-- 🏆 **Hackathon Winner** & **Published Researcher** (details below 👇)
-- 🤝 **Open to:** SDE-1 / Backend / Full-Stack Roles
-
-<br clear="all"/>
-
-**`rakesh@ubuntu:~$ cat whoami.yml`**
-
-```yaml
-name:     Rakesh Bhakre
-based_in: Navi Mumbai, MH, IN
-status:
-  seeking:  SDE roles — backend/full-stack / applied-AI
-  learning: [ system-design, distributed backends ]
-  grinding: DSA in Java ☕
-ships:
-  - Java · Spring Boot · React.js · Node · Express · MongoDB · MySQL
-  - YOLOv8 · DeepSORT · EasyOCR · FastAPI  # real-time CV pipelines
-achievements:
-  - Winner — Multiverse of Tech Hackathon ("~40 teams")
-  - Published paper: Intelligent Traffic Surveillance System
-fun_fact: >
-  stress-tested IRL — coordinated 50+ live events (teams up to 30)
-  for clients like Amazon & Microsoft before shipping code full-time.
-```
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
-
-## 🕹️ Tech Arsenal
+I'm interested in meaningful software engineering problems, collaborative product development, and opportunities to build reliable applications.
 
 <div align="center">
 
-**`// languages`**
-<br/>
-<img src="https://skillicons.dev/icons?i=java,python,javascript,typescript,cpp&theme=dark&perline=10" alt="languages"/>
-
-**`// frameworks & libraries`**
-<br/>
-<img src="https://skillicons.dev/icons?i=spring,react,nodejs,express,fastapi&theme=dark&perline=10" alt="frameworks"/>
-
-**`// data layer`**
-<br/>
-<img src="https://skillicons.dev/icons?i=mysql,mongodb,sqlite,firebase&theme=dark&perline=10" alt="databases"/>
-
-**`// computer vision/ai`**
-<br/>
-<img src="https://skillicons.dev/icons?i=opencv&theme=dark" alt="opencv"/>
-<img src="https://img.shields.io/badge/YOLOv8-00FFFF?style=for-the-badge&labelColor=0d1117&logoColor=00FFFF" alt="YOLOv8" height="28"/>
-<img src="https://img.shields.io/badge/DeepSORT-8E44AD?style=for-the-badge&labelColor=0d1117" alt="DeepSORT" height="28"/>
-<img src="https://img.shields.io/badge/EasyOCR-FF6F00?style=for-the-badge&labelColor=0d1117" alt="EasyOCR" height="28"/>
-
-**`// toolchain`**
-<br/>
-<img src="https://skillicons.dev/icons?i=git,github,docker,postman&theme=dark&perline=10" alt="tools"/>
-
-<sub>**core concepts:** dsa · oop · dbms · operating systems · computer networks</sub>
-
-</div>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
-
-## 🚀 Featured Builds
-
-<div align="center">
-
-<a href="https://github.com/rakeshbhakre/Intelligent-Traffic-Surveillance-System-">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=rakeshbhakre&repo=Intelligent-Traffic-Surveillance-System-&theme=tokyonight&hide_border=true" alt="Intelligent Traffic Surveillance System"/>
+<a href="https://rakeshbhakre.in">
+  <img src="https://img.shields.io/badge/Portfolio-rakeshbhakre.in-58A6FF?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
 </a>
-<a href="https://github.com/rakeshbhakre/real-estate-hub-space">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=rakeshbhakre&repo=real-estate-hub-space&theme=tokyonight&hide_border=true" alt="Real Estate Hub"/>
+<a href="https://www.linkedin.com/in/rakesh-bhakre/">
+  <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+</a>
+<a href="https://github.com/rakeshbhakre">
+  <img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+</a>
+<a href="mailto:rakeshbhakre00@gmail.com">
+  <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
 </a>
 
-</div>
+<br/><br/>
 
-| Build | The gist | Stack |
-| --- | --- | --- |
-| 🚦 **Intelligent Traffic Surveillance** — *[repo](https://github.com/rakeshbhakre/Intelligent-Traffic-Surveillance-System-)* | Real-time detection of **5 traffic violations** off live CCTV/RTSP streams @18–22 FPS on CPU. Homography speed estimation (~3.2 km/h error), HSV signal detection, EasyOCR plate-reading, FastAPI + SQLite backend. **Published as a research paper.** | `Python` `YOLOv8` `DeepSORT` `FastAPI` `SQLite` |
-| 🏗️ **Construction Cost & Timeline Estimator** — *[Add project link]* | MERN app that estimates materials, cost & build-time from 3D models — **won the Multiverse of Tech Hackathon** against ~40 teams. | `MongoDB` `Express` `React` `Node` |
-| 🤖 **Kawai — Virtual Assistant** — *[Add project link]* | Desktop assistant w/ voice + text commands: Google Speech API, pyttsx3 TTS, Tkinter GUI, web search, media playback & system control. | `Python` `Tkinter` |
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
-
-## 📈 Stats · Glitch Edition
-
-<div align="center">
-
-<!-- stats cards: using the sigma-five mirror of github-readme-stats — the main public
-     instance is heavily rate-limited (503s). cache_seconds reduces re-hits. -->
-<img height="170" src="https://github-readme-stats-sigma-five.vercel.app/api?username=rakeshbhakre&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&cache_seconds=86400" alt="GitHub Stats"/>
-<img height="170" src="https://streak-stats.demolab.com?user=rakeshbhakre&theme=tokyonight&hide_border=true" alt="Streak Stats"/>
-
-<img height="170" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=rakeshbhakre&layout=donut&theme=tokyonight&hide_border=true&langs_count=8&cache_seconds=86400" alt="Top Languages"/>
-
-<br/>
-
-<img src="https://github-trophies.vercel.app/?username=rakeshbhakre&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=6" width="90%" alt="Trophies"/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=rakeshbhakre&theme=tokyo-night&area=true&hide_border=true&custom_title=contribution%20graph%20//%20rakeshbhakre" width="95%" alt="Activity Graph"/>
+*Thanks for stopping by. Feel free to explore my projects and reach out.*
 
 </div>
-
-### 🐍 watch my contributions get eaten
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/rakeshbhakre/rakeshbhakre/output/github-contribution-grid-snake-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/rakeshbhakre/rakeshbhakre/output/github-contribution-grid-snake.svg"/>
-  <img alt="snake animation eating my contribution graph" src="https://raw.githubusercontent.com/rakeshbhakre/rakeshbhakre/output/github-contribution-grid-snake.svg"/>
-</picture>
-
-</div>
-
-<!-- ⚠️ Snake needs .github/workflows/snake.yml in this repo (file provided alongside this README).
-     Run the workflow once from the Actions tab, then this image lights up. -->
-
-## 🎲 ./dev-humor.sh
-
-<div align="center">
-
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Random dev quote"/>
-<br/>
-<img src="https://readme-jokes.vercel.app/api?theme=tokyonight&hideBorder" alt="Random dev joke"/>
-
-</div>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
-
-## 🤝 jack in to my network
-
-<div align="center">
-
-<a href="https://www.linkedin.com/in/rakesh-bhakre"><img src="https://skillicons.dev/icons?i=linkedin&theme=dark" height="48" alt="LinkedIn"/></a>&nbsp;&nbsp;
-<a href="mailto:rakeshbhakre00@gmail.com"><img src="https://skillicons.dev/icons?i=gmail&theme=dark" height="48" alt="Email"/></a>&nbsp;&nbsp;
-<a href="https://github.com/rakeshbhakre"><img src="https://skillicons.dev/icons?i=github&theme=dark" height="48" alt="GitHub"/></a>
-<!-- <a href="[Add portfolio link]"><img src="https://skillicons.dev/icons?i=devto&theme=dark" height="48" alt="Portfolio"/></a> -->
-
-<br/>
-
-`// thanks for stopping by — if anything here made you say "nice", drop a ⭐ on a repo.`
-
-</div>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24,12,8,2,0&height=120&section=footer" width="100%" alt="footer"/>
