@@ -6,29 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#F4F0EA">
   <meta name="description"
-    content="Rakesh Bhakre is a software engineer working across Java, Spring Boot, React, Node.js, APIs, and computer vision. Explore selected projects, experience, and contact details.">
+    content="Swapnali Jadhav is an AI and Machine Learning engineering student working across Python, TensorFlow, OpenCV, MediaPipe, Large Language Models, and explainable anomaly detection. Explore selected projects, research, experience, leadership, and achievements.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Rakesh Bhakre | Software Engineer">
+  <meta property="og:title" content="Swapnali Jadhav | AI & ML Engineering">
   <meta property="og:description"
-    content="Software engineering work across full-stack products, APIs, security tooling, and computer vision.">
-  <meta property="og:url" content="https://www.rakeshbhakre.in/">
-  <link rel="canonical" href="https://www.rakeshbhakre.in/">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="manifest" href="/manifest.webmanifest">
-  <title>Rakesh Bhakre | Software Engineer</title>
+    content="Applied AI & ML work across explainable spacecraft diagnostics, computer-vision gesture interfaces, plant biosignal research, multilingual agricultural AI, and legal RAG.">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <title>Swapnali Jadhav | AI &amp; ML Engineering</title>
   <style>
     :root {
       color-scheme: light;
       --paper: #F4F0EA;
       --ink: #1E1E1E;
       --olive: #505A3D;
+      --ink-05: rgba(30, 30, 30, .05);
       --ink-08: rgba(30, 30, 30, .08);
       --ink-12: rgba(30, 30, 30, .12);
       --ink-18: rgba(30, 30, 30, .18);
       --ink-52: rgba(30, 30, 30, .52);
       --ink-68: rgba(30, 30, 30, .68);
+      --olive-06: rgba(80, 90, 61, .06);
       --olive-10: rgba(80, 90, 61, .10);
       --olive-18: rgba(80, 90, 61, .18);
+      --olive-32: rgba(80, 90, 61, .32);
       --serif: "Newsreader", "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
       --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
@@ -43,6 +44,7 @@
     }
 
     html {
+      scroll-behavior: smooth;
       scroll-padding-top: 6rem;
     }
 
@@ -142,7 +144,7 @@
     .nav-links {
       display: flex;
       align-items: center;
-      gap: clamp(.8rem, 2vw, 1.7rem);
+      gap: clamp(.75rem, 2vw, 1.65rem);
       margin: 0;
       padding: 0;
       list-style: none;
@@ -155,7 +157,8 @@
       transition: color 150ms ease-out;
     }
 
-    .nav-links a:hover {
+    .nav-links a:hover,
+    .nav-links a[aria-current="location"] {
       color: var(--olive);
     }
 
@@ -195,8 +198,8 @@
 
     .hero-grid {
       display: grid;
-      grid-template-columns: minmax(0, 1.35fr) minmax(16rem, .65fr);
-      gap: clamp(2rem, 8vw, 7rem);
+      grid-template-columns: minmax(0, 1.32fr) minmax(17rem, .68fr);
+      gap: clamp(2rem, 7vw, 6.5rem);
       align-items: end;
     }
 
@@ -219,7 +222,7 @@
     h1 {
       max-width: 12ch;
       margin-bottom: 1.3rem;
-      font-size: clamp(3.55rem, 9vw, 8.4rem);
+      font-size: clamp(3.55rem, 8.8vw, 8.2rem);
       line-height: .91;
     }
 
@@ -269,7 +272,7 @@
     }
 
     .hero-lede {
-      max-width: 39rem;
+      max-width: 40rem;
       margin: 0;
       color: var(--ink-68);
       font-size: clamp(1rem, 1.5vw, 1.14rem);
@@ -297,9 +300,9 @@
       border: 1px solid var(--olive);
       background: var(--olive);
       color: var(--paper);
-      font-size: .8rem;
-      font-weight: 650;
+      font: 650 .8rem/1.2 var(--sans);
       text-decoration: none;
+      cursor: pointer;
       transition: background-color 150ms ease-out, color 150ms ease-out, border-color 150ms ease-out;
     }
 
@@ -319,6 +322,14 @@
       background: var(--olive-10);
       color: var(--olive);
       border-color: var(--olive);
+    }
+
+    .button span {
+      transition: transform 150ms ease-out;
+    }
+
+    .button:hover span {
+      transform: translateX(3px);
     }
 
     .hero-architecture {
@@ -344,12 +355,13 @@
       display: block;
       width: 100%;
       height: auto;
-      margin: .6rem 0 .15rem;
+      margin: .6rem 0 .2rem;
       overflow: visible;
     }
 
     .flow-track,
-    .flow-trace {
+    .flow-trace,
+    .flow-progress {
       fill: none;
       stroke-linecap: round;
       stroke-linejoin: round;
@@ -361,8 +373,16 @@
     }
 
     .flow-trace {
+      stroke: var(--olive-32);
+      stroke-width: 1.75;
+    }
+
+    .flow-progress {
       stroke: var(--olive);
-      stroke-width: 2;
+      stroke-width: 2.5;
+      stroke-dasharray: 1;
+      stroke-dashoffset: 1;
+      transition: stroke-dashoffset 420ms cubic-bezier(.22, .8, .22, 1);
     }
 
     .flow-map.has-motion .flow-trace {
@@ -380,11 +400,23 @@
       }
     }
 
+    .flow-node {
+      cursor: pointer;
+    }
+
     .flow-node>circle:first-child {
       fill: var(--paper);
       stroke: var(--ink-18);
       stroke-width: 1.5;
       transition: stroke 180ms ease-out, fill 180ms ease-out;
+    }
+
+    .flow-node .node-halo {
+      fill: none;
+      stroke: var(--olive);
+      stroke-width: 1;
+      opacity: 0;
+      transition: opacity 180ms ease-out;
     }
 
     .flow-node .node-core {
@@ -393,13 +425,36 @@
       transition: opacity 180ms ease-out;
     }
 
+    .flow-node .node-tag {
+      fill: var(--ink-52);
+      font: 600 11px/1 var(--mono);
+      letter-spacing: .08em;
+      transition: fill 180ms ease-out;
+    }
+
+    .flow-node.is-passed>circle:first-child {
+      stroke: var(--olive);
+    }
+
+    .flow-node.is-passed .node-core {
+      opacity: .55;
+    }
+
     .flow-node.is-active>circle:first-child {
       fill: var(--olive-10);
       stroke: var(--olive);
     }
 
+    .flow-node.is-active .node-halo {
+      opacity: .42;
+    }
+
     .flow-node.is-active .node-core {
       opacity: 1;
+    }
+
+    .flow-node.is-active .node-tag {
+      fill: var(--olive);
     }
 
     .flow-steps {
@@ -416,7 +471,7 @@
       text-align: left;
       color: var(--ink-52);
       background: transparent;
-      font: 600 .62rem/1.4 var(--mono);
+      font: 600 .61rem/1.4 var(--mono);
       cursor: pointer;
       transition: color 150ms ease-out, border-color 150ms ease-out;
     }
@@ -433,11 +488,20 @@
     }
 
     .flow-caption {
-      min-height: 3em;
-      margin: .8rem 0 .35rem;
+      min-height: 3.4em;
+      margin: .8rem 0 .45rem;
       color: var(--ink-68);
       font-size: .77rem;
-      line-height: 1.45;
+      line-height: 1.48;
+    }
+
+    .flow-spec {
+      margin: 0 0 .35rem;
+      padding: .38rem .52rem;
+      border-left: 2px solid var(--olive);
+      background: var(--olive-06);
+      color: var(--ink);
+      font: 500 .6rem/1.45 var(--mono);
     }
 
     .flow-note {
@@ -445,14 +509,6 @@
       color: var(--ink-52);
       font: 500 .59rem/1.5 var(--mono);
       letter-spacing: .015em;
-    }
-
-    .button span {
-      transition: transform 150ms ease-out;
-    }
-
-    .button:hover span {
-      transform: translateX(3px);
     }
 
     .motion-ready [data-reveal] {
@@ -510,7 +566,7 @@
     }
 
     .section-intro {
-      max-width: 37rem;
+      max-width: 38rem;
       margin: 0;
       color: var(--ink-68);
       font-size: .97rem;
@@ -539,10 +595,11 @@
       color: var(--olive);
       font: 500 clamp(2rem, 4vw, 3.5rem)/1 var(--serif);
       letter-spacing: -.06em;
+      font-variant-numeric: tabular-nums;
     }
 
     .proof-label {
-      max-width: 16ch;
+      max-width: 21ch;
       color: var(--ink-68);
       font-size: .78rem;
       line-height: 1.45;
@@ -554,10 +611,15 @@
 
     .project {
       display: grid;
-      grid-template-columns: minmax(12rem, .55fr) minmax(18rem, 1fr) minmax(8rem, .35fr);
+      grid-template-columns: minmax(11.5rem, .52fr) minmax(18rem, 1.08fr) minmax(9rem, .38fr);
       gap: clamp(1rem, 3vw, 2.5rem);
       padding-block: clamp(1.7rem, 4vw, 2.7rem);
       border-bottom: 1px solid var(--ink-18);
+      transition: background-color 180ms ease-out;
+    }
+
+    .project.is-highlighted {
+      background: var(--olive-06);
     }
 
     .project-meta {
@@ -571,6 +633,7 @@
       color: var(--olive);
       font: 600 .67rem/1.4 var(--mono);
       letter-spacing: .11em;
+      text-transform: uppercase;
     }
 
     .project-period {
@@ -585,7 +648,7 @@
     }
 
     .project-copy p {
-      max-width: 45rem;
+      max-width: 46rem;
       margin-bottom: .85rem;
       color: var(--ink-68);
       font-size: .9rem;
@@ -601,7 +664,7 @@
     }
 
     .project--compact {
-      padding-block: 1.25rem;
+      padding-block: 1.35rem;
     }
 
     .project--compact .project-copy h3 {
@@ -609,7 +672,7 @@
     }
 
     .project--compact .project-copy p {
-      font-size: .82rem;
+      font-size: .84rem;
     }
 
     .project--compact .tag-list li {
@@ -636,33 +699,169 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      gap: .65rem;
+      gap: .6rem;
       justify-self: end;
+      width: 100%;
+      max-width: 11.5rem;
     }
 
-    .text-link {
+    .text-link,
+    .drawer-toggle {
+      padding: 0;
+      border: 0;
+      background: transparent;
       color: var(--olive);
-      font-size: .79rem;
-      font-weight: 650;
+      font: 650 .79rem/1.35 var(--sans);
+      text-align: left;
+      text-decoration: underline;
       text-decoration-thickness: 1px;
       text-underline-offset: .24em;
+      cursor: pointer;
+      transition: color 150ms ease-out;
     }
 
-    .text-link:hover {
+    .text-link:hover,
+    .drawer-toggle:hover {
       color: var(--ink);
     }
 
     .project-note {
-      max-width: 11rem;
+      max-width: 11.5rem;
       color: var(--ink-52);
       font-size: .68rem;
       line-height: 1.5;
     }
 
+    /* Expandable Engineering System Drawers */
+    .system-drawer {
+      grid-column: 2 / -1;
+      margin-top: .5rem;
+      padding: 1.25rem;
+      border: 1px solid var(--ink-18);
+      background: rgba(244, 240, 234, .72);
+    }
+
+    .system-drawer[hidden] {
+      display: none;
+    }
+
+    .drawer-head {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: .5rem 1rem;
+      padding-bottom: .75rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid var(--ink-12);
+    }
+
+    .drawer-title {
+      color: var(--olive);
+      font: 600 .66rem/1.4 var(--mono);
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .drawer-meta {
+      color: var(--ink-52);
+      font: 500 .63rem/1.4 var(--mono);
+    }
+
+    .episode-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .45rem;
+      margin-bottom: 1rem;
+    }
+
+    .episode-tab {
+      padding: .42rem .68rem;
+      border: 1px solid var(--ink-18);
+      background: transparent;
+      color: var(--ink-68);
+      font: 600 .63rem/1.3 var(--mono);
+      cursor: pointer;
+      transition: background-color 150ms ease-out, color 150ms ease-out, border-color 150ms ease-out;
+    }
+
+    .episode-tab:hover,
+    .episode-tab[aria-pressed="true"] {
+      border-color: var(--olive);
+      background: var(--olive);
+      color: var(--paper);
+    }
+
+    .bench-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      border-top: 1px solid var(--ink-12);
+      border-left: 1px solid var(--ink-12);
+    }
+
+    .bench-grid--three {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .bench-cell {
+      padding: .85rem .9rem;
+      border-right: 1px solid var(--ink-12);
+      border-bottom: 1px solid var(--ink-12);
+    }
+
+    .bench-label {
+      display: block;
+      margin-bottom: .4rem;
+      color: var(--olive);
+      font: 600 .6rem/1.35 var(--mono);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .bench-value {
+      color: var(--ink);
+      font-size: .78rem;
+      line-height: 1.48;
+    }
+
+    .bench-bars {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+      padding-top: .9rem;
+      border-top: 1px solid var(--ink-12);
+    }
+
+    .bench-bar-head {
+      display: flex;
+      justify-content: space-between;
+      gap: .5rem;
+      margin-bottom: .38rem;
+      color: var(--ink-68);
+      font: 600 .63rem/1.4 var(--mono);
+    }
+
+    .bench-bar-head strong {
+      color: var(--olive);
+    }
+
+    .bench-meter {
+      height: 5px;
+      background: var(--ink-12);
+    }
+
+    .bench-meter>span {
+      display: block;
+      height: 100%;
+      background: var(--olive);
+    }
+
+    /* Technical Specifications */
     .technical-grid {
       display: grid;
-      grid-template-columns: minmax(14rem, .7fr) 1.3fr;
-      gap: clamp(2rem, 8vw, 7rem);
+      grid-template-columns: minmax(14rem, .72fr) 1.28fr;
+      gap: clamp(2rem, 7vw, 6.5rem);
     }
 
     .technical-copy {
@@ -671,8 +870,47 @@
       font-size: .92rem;
     }
 
-    .technical-copy p:last-child {
-      margin-bottom: 0;
+    .trace-panel {
+      margin-top: 1.4rem;
+      padding: 1rem 1.1rem;
+      border: 1px solid var(--ink-18);
+      background: var(--olive-06);
+    }
+
+    .trace-label {
+      display: block;
+      margin-bottom: .45rem;
+      color: var(--olive);
+      font: 600 .63rem/1.4 var(--mono);
+      letter-spacing: .09em;
+      text-transform: uppercase;
+    }
+
+    .trace-text {
+      margin: 0 0 .7rem;
+      color: var(--ink-68);
+      font-size: .8rem;
+      line-height: 1.5;
+    }
+
+    .trace-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .4rem;
+    }
+
+    .trace-pill {
+      padding: .24rem .5rem;
+      border: 1px solid var(--olive-32);
+      color: var(--olive);
+      font: 600 .61rem/1.4 var(--mono);
+      text-decoration: none;
+      transition: background-color 150ms ease-out, color 150ms ease-out;
+    }
+
+    .trace-pill:hover {
+      background: var(--olive);
+      color: var(--paper);
     }
 
     .spec-table {
@@ -683,33 +921,45 @@
 
     .spec-table tr {
       border-top: 1px solid var(--ink-18);
+      cursor: pointer;
+      transition: background-color 150ms ease-out;
     }
 
     .spec-table tr:last-child {
       border-bottom: 1px solid var(--ink-18);
     }
 
+    .spec-table tr:hover,
+    .spec-table tr.is-selected {
+      background: var(--olive-06);
+    }
+
     .spec-table th,
     .spec-table td {
-      padding: .9rem .4rem .9rem 0;
+      padding: .92rem .55rem .92rem .4rem;
       vertical-align: top;
       font-size: .82rem;
     }
 
     .spec-table th {
-      width: 9.5rem;
+      width: 9.8rem;
       color: var(--olive);
       font: 600 .69rem/1.5 var(--mono);
       letter-spacing: .035em;
+    }
+
+    .spec-table tr.is-selected th::before {
+      content: "▸ ";
     }
 
     .spec-table td {
       color: var(--ink-68);
     }
 
+    /* Experience, Leadership & Education Timeline */
     .timeline {
       display: grid;
-      grid-template-columns: minmax(11rem, .55fr) 1fr;
+      grid-template-columns: minmax(11.5rem, .55fr) 1fr;
       border-top: 1px solid var(--ink-18);
     }
 
@@ -724,6 +974,7 @@
     }
 
     .timeline-date {
+      padding-right: 1rem;
       color: var(--olive);
       font: 600 .68rem/1.5 var(--mono);
       letter-spacing: .04em;
@@ -748,6 +999,12 @@
       font-size: .86rem;
     }
 
+    .timeline-body strong {
+      color: var(--ink);
+      font-weight: 650;
+    }
+
+    /* Achievements & Recognition */
     .achievements {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -763,7 +1020,7 @@
     }
 
     .achievement-label {
-      margin-bottom: 1.2rem;
+      margin-bottom: 1.15rem;
       color: var(--olive);
       font: 600 .66rem/1.4 var(--mono);
       letter-spacing: .1em;
@@ -783,9 +1040,10 @@
       font-size: .82rem;
     }
 
+    /* Contact */
     .contact {
       display: grid;
-      grid-template-columns: 1fr minmax(16rem, .55fr);
+      grid-template-columns: 1fr minmax(17.5rem, .6fr);
       gap: 2rem;
       align-items: end;
     }
@@ -801,40 +1059,69 @@
     }
 
     .contact-card {
-      padding: 1.35rem;
+      padding: 1.4rem;
       border: 1px solid var(--ink-18);
     }
 
     .contact-card .small-label {
       display: block;
-      margin-bottom: .6rem;
+      margin-bottom: .35rem;
       color: var(--ink-52);
-      font: 600 .66rem/1.4 var(--mono);
+      font: 600 .65rem/1.4 var(--mono);
       letter-spacing: .1em;
       text-transform: uppercase;
     }
 
     .email-link {
       display: block;
-      margin-bottom: 1.1rem;
+      margin-bottom: .95rem;
       color: var(--olive);
-      font: 500 clamp(1rem, 2vw, 1.25rem)/1.4 var(--sans);
+      font: 500 clamp(.95rem, 1.8vw, 1.16rem)/1.4 var(--sans);
       overflow-wrap: anywhere;
+    }
+
+    .phone-link {
+      display: inline-block;
+      margin-bottom: 1.2rem;
+      color: var(--ink);
+      font: 500 .92rem/1.4 var(--mono);
+      text-decoration: none;
+    }
+
+    .phone-link:hover {
+      color: var(--olive);
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .55rem;
     }
 
     .social-links {
       display: flex;
       flex-wrap: wrap;
-      gap: 1rem;
-      margin-top: 1rem;
+      gap: .8rem 1.1rem;
+      margin-top: 1.05rem;
+      padding-top: .9rem;
+      border-top: 1px solid var(--ink-12);
     }
 
-    .social-links a {
+    .social-links a,
+    .copy-email-btn {
+      padding: 0;
+      border: 0;
+      background: transparent;
       color: var(--ink-68);
-      font-size: .77rem;
+      font: 400 .77rem/1.4 var(--sans);
+      text-decoration: underline;
+      text-decoration-thickness: .06em;
+      text-underline-offset: .2em;
+      cursor: pointer;
     }
 
-    .social-links a:hover {
+    .social-links a:hover,
+    .copy-email-btn:hover {
       color: var(--olive);
     }
 
@@ -862,38 +1149,7 @@
       text-decoration: none;
     }
 
-    .legal-page {
-      min-height: calc(100svh - 9rem);
-      padding-block: clamp(4rem, 9vw, 7rem);
-    }
-
-    .legal-page h1 {
-      max-width: 14ch;
-      font-size: clamp(3rem, 7vw, 6rem);
-    }
-
-    .legal-content {
-      max-width: 48rem;
-    }
-
-    .legal-content h2 {
-      margin: 2.3rem 0 .7rem;
-      font-size: 1.65rem;
-    }
-
-    .legal-content p,
-    .legal-content li {
-      color: var(--ink-68);
-      font-size: .9rem;
-    }
-
-    .legal-notice {
-      padding: 1rem 1.2rem;
-      border-left: 2px solid var(--olive);
-      background: var(--olive-10);
-    }
-
-    @media (max-width: 820px) {
+    @media (max-width: 860px) {
       .hero {
         min-height: auto;
       }
@@ -906,7 +1162,7 @@
       }
 
       .hero-architecture {
-        max-width: 34rem;
+        max-width: 36rem;
         margin-top: 1.5rem;
       }
 
@@ -925,7 +1181,7 @@
       }
 
       .project {
-        grid-template-columns: minmax(7rem, .35fr) 1fr;
+        grid-template-columns: minmax(7.5rem, .35fr) 1fr;
       }
 
       .project-link {
@@ -934,6 +1190,19 @@
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
+        max-width: none;
+      }
+
+      .system-drawer {
+        grid-column: 1 / -1;
+      }
+
+      .bench-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .bench-grid--three {
+        grid-template-columns: 1fr;
       }
     }
 
@@ -957,11 +1226,11 @@
       }
 
       .nav-links .nav-contact {
-        padding-left: .5rem;
+        padding-left: .35rem;
       }
 
       .hero {
-        padding-top: 4.3rem;
+        padding-top: 4.1rem;
       }
 
       .hero-architecture {
@@ -971,7 +1240,7 @@
       }
 
       h1 {
-        font-size: clamp(3.35rem, 17vw, 5.4rem);
+        font-size: clamp(3.3rem, 16vw, 5.3rem);
       }
 
       .proof-grid {
@@ -979,7 +1248,7 @@
       }
 
       .proof-item {
-        min-height: 9rem;
+        min-height: 9.2rem;
       }
 
       .project {
@@ -995,6 +1264,11 @@
 
       .project-link {
         grid-column: auto;
+      }
+
+      .bench-grid,
+      .bench-bars {
+        grid-template-columns: 1fr;
       }
 
       .timeline {
@@ -1019,7 +1293,7 @@
       }
 
       .spec-table th {
-        width: 7.2rem;
+        width: 7.4rem;
       }
     }
 
@@ -1041,76 +1315,96 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="wrap nav-row">
-      <a class="wordmark" href="#top" aria-label="Rakesh Bhakre, home"><span class="wordmark-mark"
-          aria-hidden="true">RB</span><span>Rakesh Bhakre</span></a>
+      <a class="wordmark" href="#top" aria-label="Swapnali Jadhav, home"><span class="wordmark-mark"
+          aria-hidden="true">SJ</span><span>Swapnali Jadhav</span></a>
       <nav aria-label="Main navigation">
         <ul class="nav-links">
           <li><a href="#work">Work</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#experience">Experience</a></li>
+          <li><a href="#recognition">Recognition</a></li>
           <li><a class="nav-contact" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
+
   <main id="main">
     <section class="hero wrap" id="top" aria-labelledby="hero-title">
       <div class="hero-grid">
         <div>
-          <p class="eyebrow">Software engineer · Navi Mumbai, India</p>
-          <h1 id="hero-title"><span class="hero-line"><span>I build</span></span><span
-              class="hero-line"><span>software</span></span><span class="hero-line"><span>that gets
-                the</span></span><span class="hero-line"><span><em>work done.</em></span></span></h1>
-          <p class="hero-lede">I’m Rakesh, a software engineer who builds application features, APIs, dashboards, and
-            product workflows. My work spans <strong>Java and Spring Boot</strong>, <strong>React</strong>,
-            <strong>Node.js</strong>, and applied computer vision.</p>
+          <p class="eyebrow">AI &amp; ML engineering · Navi Mumbai, India</p>
+          <h1 id="hero-title"><span class="hero-line"><span>I build</span></span><span class="hero-line"><span>AI
+                systems</span></span><span class="hero-line"><span>for critical</span></span><span
+              class="hero-line"><span><em>decisions.</em></span></span></h1>
+          <p class="hero-lede">I’m Swapnali, an AI and Machine Learning engineering student building explainable ML
+            pipelines, computer-vision interfaces, and LLM workflows. My work spans <strong>Python</strong>,
+            <strong>TensorFlow</strong>, <strong>OpenCV and MediaPipe</strong>, and <strong>applied LLMs</strong>.</p>
           <div class="hero-actions">
             <a class="button" href="#work">Explore selected work <span aria-hidden="true">↗</span></a>
-            <!-- <a class="button secondary" href="/assets/Rakesh_Resume.pdf" download>Download résumé <span
-                aria-hidden="true">↓</span></a> -->
-                <a class="button secondary" href="./assets/Rakesh_Resume.pdf" download="Rakesh_Bhakre_Resume.pdf">
-            Download résumé
-            <span aria-hidden="true">↓</span>
-          </a>
+            <a class="button secondary" href="./assets/Swapnali_Jadhav_Resume.pdf"
+              download="Swapnali_Jadhav_Resume.pdf">
+              Download résumé
+              <span aria-hidden="true">↓</span>
+            </a>
           </div>
         </div>
-        <aside class="hero-architecture" data-reveal aria-label="Interactive GARUDX scan pipeline map">
-          <div class="architecture-head"><span>GARUDX / scan flow</span><span>PROJECT MAP</span></div>
-          <svg class="flow-map" viewBox="0 0 600 170" aria-hidden="true" focusable="false">
-            <path class="flow-track" d="M48 86 C110 86 125 48 216 48 S320 122 384 122 S485 86 552 86" />
-            <path class="flow-trace" pathLength="1" d="M48 86 C110 86 125 48 216 48 S320 122 384 122 S485 86 552 86" />
-            <g class="flow-node is-active" data-node="upload">
-              <circle cx="48" cy="86" r="11" />
-              <circle class="node-core" cx="48" cy="86" r="3" />
+
+        <aside class="hero-architecture" data-reveal aria-label="Interactive AEGIS spacecraft diagnostic pipeline map">
+          <div class="architecture-head"><span>AEGIS / fault flow</span><span>PROJECT MAP</span></div>
+          <svg class="flow-map" viewBox="0 0 600 182" aria-hidden="true" focusable="false">
+            <path class="flow-track" d="M48 92 C110 92 125 50 216 50 S320 130 384 130 S485 92 552 92" />
+            <path class="flow-trace" pathLength="1"
+              d="M48 92 C110 92 125 50 216 50 S320 130 384 130 S485 92 552 92" />
+            <path class="flow-progress" pathLength="1"
+              d="M48 92 C110 92 125 50 216 50 S320 130 384 130 S485 92 552 92" />
+            <g class="flow-node is-passed is-active" data-node="detect">
+              <circle cx="48" cy="92" r="11" />
+              <circle class="node-halo" cx="48" cy="92" r="16" />
+              <circle class="node-core" cx="48" cy="92" r="3.2" />
+              <text class="node-tag" x="48" y="124" text-anchor="middle">DETECT</text>
             </g>
-            <g class="flow-node" data-node="scan">
-              <circle cx="216" cy="48" r="11" />
-              <circle class="node-core" cx="216" cy="48" r="3" />
+            <g class="flow-node" data-node="explain">
+              <circle cx="216" cy="50" r="11" />
+              <circle class="node-halo" cx="216" cy="50" r="16" />
+              <circle class="node-core" cx="216" cy="50" r="3.2" />
+              <text class="node-tag" x="216" y="25" text-anchor="middle">EXPLAIN</text>
             </g>
-            <g class="flow-node" data-node="findings">
-              <circle cx="384" cy="122" r="11" />
-              <circle class="node-core" cx="384" cy="122" r="3" />
+            <g class="flow-node" data-node="recommend">
+              <circle cx="384" cy="130" r="11" />
+              <circle class="node-halo" cx="384" cy="130" r="16" />
+              <circle class="node-core" cx="384" cy="130" r="3.2" />
+              <text class="node-tag" x="384" y="162" text-anchor="middle">RECOMMEND</text>
             </g>
-            <g class="flow-node" data-node="report">
-              <circle cx="552" cy="86" r="11" />
-              <circle class="node-core" cx="552" cy="86" r="3" />
+            <g class="flow-node" data-node="safety">
+              <circle cx="552" cy="92" r="11" />
+              <circle class="node-halo" cx="552" cy="92" r="16" />
+              <circle class="node-core" cx="552" cy="92" r="3.2" />
+              <text class="node-tag" x="552" y="66" text-anchor="middle">SAFETY</text>
             </g>
           </svg>
-          <div class="flow-steps" role="group" aria-label="GARUDX project stages">
-            <button class="flow-step" type="button" data-step="upload"
-              data-copy="Project files enter GARUDX through the upload workflow." aria-pressed="true">01 Upload</button>
-            <button class="flow-step" type="button" data-step="scan"
-              data-copy="Semgrep, OSV-Scanner, and Gitleaks are orchestrated in the scan workflow."
-              aria-pressed="false">02 Scan</button>
-            <button class="flow-step" type="button" data-step="findings"
-              data-copy="Findings are normalized and stored in MongoDB for review." aria-pressed="false">03
-              Findings</button>
-            <button class="flow-step" type="button" data-step="report"
-              data-copy="The React dashboard presents scan history and downloadable reports." aria-pressed="false">04
-              Report</button>
+          <div class="flow-steps" role="group" aria-label="AEGIS workflow stages">
+            <button class="flow-step" type="button" data-step="detect" data-progress="1"
+              data-copy="Telemetry (battery voltage, temperature, wheel speed, power) clears missing, stale, and noisy data checks before ML + statistical fault detection."
+              data-spec="GATE · Multi-channel telemetry quality check + anomaly detection"
+              aria-pressed="true">01 Detect</button>
+            <button class="flow-step" type="button" data-step="explain" data-progress="0.6758"
+              data-copy="Fault alerts are paired with ranked root-cause hypotheses, weighing matched telemetry patterns against contradicting sensor evidence."
+              data-spec="EVIDENCE · Ranked root causes with matched vs. contradicting signals"
+              aria-pressed="false">02 Explain</button>
+            <button class="flow-step" type="button" data-step="recommend" data-progress="0.3212"
+              data-copy="Candidate mitigation actions are selected from a predefined spacecraft response library tailored to the diagnosed fault profile."
+              data-spec="ACTION · Predefined recovery procedures mapped to fault class"
+              aria-pressed="false">03 Recommend</button>
+            <button class="flow-step" type="button" data-step="safety" data-progress="0"
+              data-copy="Detection is separated from execution via a rule-based safety guard. Detected 29 of 40 injected fault episodes (72.5%) in simulation."
+              data-spec="BENCHMARK · 29/40 episodes detected · 5/5 reaction-wheel friction"
+              aria-pressed="false">04 Safety</button>
           </div>
-          <p class="flow-caption" aria-live="polite">Project files enter GARUDX through the upload workflow.</p>
-          <p class="flow-note">Architecture sequence, not a live scan feed.</p>
+          <p class="flow-caption" aria-live="polite">Telemetry (battery voltage, temperature, wheel speed, power) clears
+            missing, stale, and noisy data checks before ML + statistical fault detection.</p>
+          <p class="flow-spec">GATE · Multi-channel telemetry quality check + anomaly detection</p>
+          <p class="flow-note">Architecture sequence · Winning Project, Hackathon 2026.</p>
         </aside>
       </div>
     </section>
@@ -1122,22 +1416,25 @@
             <p class="section-index">01 / Evidence</p>
             <h2 id="proof-title">Work with a record.</h2>
           </div>
-          <p class="section-intro">A compact record across application security, software delivery, event operations,
-            and team competition.</p>
+          <p class="section-intro">Measured outcomes across spacecraft fault simulation, academic standing, technical
+            outreach, and hackathon competition.</p>
         </div>
-        <div class="proof-grid" role="list" aria-label="Selected project and work facts">
-          <div class="proof-item" role="listitem" data-reveal><span class="proof-number">3</span>
-            <div class="proof-label">Security analysis tools orchestrated in GARUDX: Semgrep, OSV-Scanner, and Gitleaks
-            </div>
+        <div class="proof-grid" role="list" aria-label="Selected project, academic, and work facts">
+          <div class="proof-item" role="listitem" data-reveal><span class="proof-number">72.5%</span>
+            <div class="proof-label">Fault episodes detected (29 of 40) in AEGIS spacecraft simulation, including 5 of 5
+              reaction-wheel friction episodes</div>
           </div>
-          <div class="proof-item" role="listitem" data-reveal><span class="proof-number">6 months</span>
-            <div class="proof-label">Software Developer internship at Quibits, Jan–Jun 2025</div>
+          <div class="proof-item" role="listitem" data-reveal><span class="proof-number">8.5</span>
+            <div class="proof-label">Overall CGPA out of 10 in B.E. Artificial Intelligence &amp; Machine Learning at
+              Mumbai University</div>
           </div>
-          <div class="proof-item" role="listitem" data-reveal><span class="proof-number">100+</span>
-            <div class="proof-label">Events coordinated for Amazon, Microsoft, and other clients</div>
+          <div class="proof-item" role="listitem" data-reveal><span class="proof-number">+35%</span>
+            <div class="proof-label">Engagement growth driven through Gen-Z focused tech, culture, and AI storytelling
+              at Scroll Connect</div>
           </div>
           <div class="proof-item" role="listitem" data-reveal><span class="proof-number">1st</span>
-            <div class="proof-label">At the 2026 Multiverse of Tech Hackathon, among about 40 teams</div>
+            <div class="proof-label">Winning project at Hackathon 2026 with AEGIS, alongside an SIH 2024 shortlist and
+              IRJET published paper</div>
           </div>
         </div>
         <p class="section-action"><a class="text-link" href="#work">Review the project details ↗</a></p>
@@ -1151,71 +1448,242 @@
             <p class="section-index">02 / Selected work</p>
             <h2 id="work-title">Systems built for use.</h2>
           </div>
-          <p class="section-intro">GARUDX and RestoQR take the lead. A concise research case is included as additional
-            technical work.</p>
+          <p class="section-intro">AEGIS, Air-Hand Gesture Recognition, and Plant Whisper lead the engineering and
+            published research record, followed by multilingual agricultural AI and legal document NLP.</p>
         </div>
+
         <div class="work-list">
-          <article class="project project--featured" aria-labelledby="garudx-title" data-reveal>
-            <div class="project-meta"><span class="project-no">FEATURE 01</span><span class="project-period">Jun–Sep
-                2026</span></div>
+          <article class="project project--featured" id="project-aegis" aria-labelledby="aegis-title"
+            data-domains="languages,vision,iot,foundations" data-reveal>
+            <div class="project-meta"><span class="project-no">FEATURE 01</span><span class="project-period">Hackathon
+                2026 · Winner</span></div>
             <div class="project-copy">
-              <h3 id="garudx-title">GARUDX</h3>
-              <p><strong>Application security platform.</strong> Built a full-stack workflow for source-code
-                vulnerability scanning, dependency analysis, and hardcoded-secret detection. The backend handles
-                uploads, scan orchestration, normalized findings, MongoDB persistence, and report generation. A React
-                dashboard presents progress, findings, history, and downloadable reports.</p>
-              <ul class="tag-list" aria-label="GARUDX technologies">
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>React</li>
-                <li>MongoDB</li>
-                <li>Semgrep</li>
-                <li>OSV-Scanner</li>
-                <li>Gitleaks</li>
+              <h3 id="aegis-title">AEGIS</h3>
+              <p><strong>Explainable spacecraft-health monitoring &amp; decision support.</strong> Built a
+                spacecraft-health monitoring prototype that turns telemetry (battery voltage, temperature, wheel speed,
+                power) into explainable fault alerts and safety-checked response recommendations through a detect →
+                explain → recommend → safety-check workflow.</p>
+              <p>Added telemetry-quality checks for missing, stale, and noisy data so sensor or data issues are not
+                mistaken for hardware faults; combined statistical and ML detection over multi-channel patterns to rank
+                likely root causes with matched and contradicting evidence; and separated detection from action approval
+                using a rule-based guard over a predefined action library. In a saved simulation benchmark with fault
+                injection, detected <strong>29 of 40 injected fault episodes (72.5%)</strong>, including <strong>5 of 5
+                  reaction-wheel friction episodes</strong>.</p>
+              <ul class="tag-list" aria-label="AEGIS technologies">
+                <li>Python</li>
+                <li>Machine Learning</li>
+                <li>Anomaly Detection</li>
+                <li>Spacecraft Simulation</li>
+                <li>Explainable AI</li>
+                <li>Rule-Based Safety Guard</li>
               </ul>
             </div>
-            <div class="project-link"><a class="text-link" href="https://securityloyals.com/products/garudx"
-                target="_blank" rel="noreferrer">View product ↗</a><span class="project-note">Freelance project</span>
+            <div class="project-link">
+              <button class="drawer-toggle" type="button" aria-expanded="false" aria-controls="aegis-drawer"
+                data-open-label="Inspect fault bench ↓" data-close-label="Close fault bench ↑">Inspect fault bench
+                ↓</button>
+              <span class="project-note">Winning Project · Hackathon 2026</span>
+            </div>
+
+            <div class="system-drawer" id="aegis-drawer" hidden>
+              <div class="drawer-head">
+                <span class="drawer-title">AEGIS · Saved Fault-Injection Simulation Walkthrough</span>
+                <span class="drawer-meta">Detect → Explain → Recommend → Safety-Check</span>
+              </div>
+              <div class="episode-tabs" role="group" aria-label="Select simulated spacecraft fault scenario">
+                <button class="episode-tab" type="button" aria-pressed="true" data-episode="wheel">01 Reaction-Wheel
+                  Friction (5/5)</button>
+                <button class="episode-tab" type="button" aria-pressed="false" data-episode="quality">02 Stale / Noisy
+                  Telemetry Gate</button>
+                <button class="episode-tab" type="button" aria-pressed="false" data-episode="power">03 Multi-Channel
+                  Power &amp; Thermal</button>
+              </div>
+              <div class="bench-grid" id="aegis-readout" aria-live="polite">
+                <div class="bench-cell">
+                  <span class="bench-label">01 Telemetry &amp; Detect</span>
+                  <div class="bench-value" data-field="detect">Wheel speed lag paired with elevated motor power draw
+                    while bus voltage remains nominal.</div>
+                </div>
+                <div class="bench-cell">
+                  <span class="bench-label">02 Root-Cause Explain</span>
+                  <div class="bench-value" data-field="explain">Ranked #1: Reaction-wheel bearing friction. Matched:
+                    wheel speed, power. Contradicting channels: none.</div>
+                </div>
+                <div class="bench-cell">
+                  <span class="bench-label">03 Action Recommend</span>
+                  <div class="bench-value" data-field="recommend">Candidate selected from predefined action library:
+                    wheel momentum unload and backup wheel transition.</div>
+                </div>
+                <div class="bench-cell">
+                  <span class="bench-label">04 Rule-Based Guard</span>
+                  <div class="bench-value" data-field="guard">Approved after attitude-rate and power-margin safety
+                    constraints pass independent guard rules.</div>
+                </div>
+              </div>
+              <div class="bench-bars">
+                <div>
+                  <div class="bench-bar-head"><span>Injected fault episodes detected</span><strong>29 / 40
+                      (72.5%)</strong></div>
+                  <div class="bench-meter" aria-hidden="true"><span style="width: 72.5%"></span></div>
+                </div>
+                <div>
+                  <div class="bench-bar-head"><span>Reaction-wheel friction episodes detected</span><strong>5 / 5
+                      (100%)</strong></div>
+                  <div class="bench-meter" aria-hidden="true"><span style="width: 100%"></span></div>
+                </div>
+              </div>
             </div>
           </article>
-          <article class="project project--featured" aria-labelledby="restoqr-title" data-reveal>
-            <div class="project-meta"><span class="project-no">FEATURE 02</span><span class="project-period">Jan
-                2026–present</span></div>
+
+          <article class="project project--featured" id="project-gesture" aria-labelledby="gesture-title"
+            data-domains="languages,vision,foundations" data-reveal>
+            <div class="project-meta"><span class="project-no">FEATURE 02</span><span class="project-period">National
+                Conference</span></div>
             <div class="project-copy">
-              <h3 id="restoqr-title">RestoQR</h3>
-              <p><strong>Restaurant ordering and operations.</strong> Contributed across customer ordering, kitchen,
-                cashier, and management workflows. The product brings QR ordering, kitchen operations, POS, billing,
-                inventory, and administration into a shared platform. My work improved end-to-end workflows and reduced
-                manual steps.</p>
-              <ul class="tag-list" aria-label="RestoQR project areas">
-                <li>Product workflows</li>
-                <li>QR ordering</li>
-                <li>Kitchen operations</li>
-                <li>POS</li>
-                <li>Billing</li>
-                <li>Inventory</li>
+              <h3 id="gesture-title">Air-Hand Gesture Recognition System</h3>
+              <p><strong>Contactless computer-vision interaction interface.</strong> Built a touch-free interaction
+                system using sensors, cameras, and MediaPipe-based hand-landmark tracking to translate in-air hand
+                movements into real-time device actions — enabling hygienic, hands-free control for smart devices, VR,
+                and in-car or gaming systems.</p>
+              <p>Delivered four complete touch-free interaction modules — <strong>Virtual Painting</strong>,
+                <strong>Virtual Mouse</strong>, <strong>Virtual Volume Controller</strong>, and <strong>Virtual
+                  Keyboard</strong> — and presented the work at a national-level paper conference.</p>
+              <ul class="tag-list" aria-label="Air-Hand Gesture Recognition technologies">
+                <li>Python</li>
+                <li>OpenCV</li>
+                <li>MediaPipe</li>
+                <li>Hand-Landmark Tracking</li>
+                <li>Contactless HCI</li>
               </ul>
             </div>
-            <div class="project-link"><a class="text-link" href="https://restoqr.quibits.in/" target="_blank"
-                rel="noreferrer">Visit live product ↗</a><span class="project-note">Ongoing product work</span></div>
+            <div class="project-link">
+              <button class="drawer-toggle" type="button" aria-expanded="false" aria-controls="gesture-drawer"
+                data-open-label="View 4 modules ↓" data-close-label="Hide 4 modules ↑">View 4 modules ↓</button>
+              <span class="project-note">Presented at national-level paper conference</span>
+            </div>
+
+            <div class="system-drawer" id="gesture-drawer" hidden>
+              <div class="drawer-head">
+                <span class="drawer-title">Delivered Touch-Free Interaction Modules</span>
+                <span class="drawer-meta">OpenCV + MediaPipe 21-Point Hand Tracking</span>
+              </div>
+              <div class="bench-grid">
+                <div class="bench-cell">
+                  <span class="bench-label">Module 01</span>
+                  <div class="bench-value"><strong>Virtual Painting</strong> — Tracks index-finger trajectories in air
+                    for real-time freehand drawing and gesture-based brush switching.</div>
+                </div>
+                <div class="bench-cell">
+                  <span class="bench-label">Module 02</span>
+                  <div class="bench-value"><strong>Virtual Mouse</strong> — Maps normalized fingertip coordinates to
+                    screen space with pinch-gesture click and cursor smoothing.</div>
+                </div>
+                <div class="bench-cell">
+                  <span class="bench-label">Module 03</span>
+                  <div class="bench-value"><strong>Virtual Volume Controller</strong> — Translates thumb–index finger
+                    distance into continuous, touch-free audio level adjustment.</div>
+                </div>
+                <div class="bench-cell">
+                  <span class="bench-label">Module 04</span>
+                  <div class="bench-value"><strong>Virtual Keyboard</strong> — Spatial key-zone hit detection enabling
+                    hygienic, contactless text input for smart and in-car displays.</div>
+                </div>
+              </div>
+            </div>
           </article>
-          <article class="project project--compact" aria-labelledby="traffic-title" data-reveal>
-            <div class="project-meta"><span class="project-no">RESEARCH CASE</span><span
-                class="project-period">2025</span></div>
+
+          <article class="project project--featured" id="project-plant" aria-labelledby="plant-title"
+            data-domains="languages,vision,iot" data-reveal>
+            <div class="project-meta"><span class="project-no">FEATURE 03</span><span class="project-period">IRJET
+                Published Paper</span></div>
             <div class="project-copy">
-              <h3 id="traffic-title">Intelligent Traffic Surveillance</h3>
-              <p>Built a YOLOv8 and DeepSORT system for five traffic violations from CCTV and RTSP streams. Used
-                homography, HSV signal detection, and EasyOCR with FastAPI and SQLite. Reported performance was 18–22
-                FPS with 3.2 km/h speed-estimation error; the work was published as a research paper.</p>
-              <ul class="tag-list" aria-label="Traffic project technologies">
-                <li>YOLOv8</li>
-                <li>DeepSORT</li>
-                <li>FastAPI</li>
+              <h3 id="plant-title">Plant Whisper</h3>
+              <p><strong>AI-powered plant biosignal &amp; environmental monitoring.</strong> Conducted interdisciplinary
+                research studying how plants perceive and respond to their environment via biochemical and electrical
+                signals.</p>
+              <p>Integrated environmental sensors, real-time data acquisition, and machine learning to monitor plant
+                responses to <strong>light, temperature, soil moisture, sound, and human interaction</strong> — building
+                predictive models for plant health with applications in precision farming and smart gardening.</p>
+              <ul class="tag-list" aria-label="Plant Whisper technologies">
+                <li>Python</li>
+                <li>Machine Learning</li>
+                <li>IoT Sensors</li>
+                <li>Signal Acquisition</li>
+                <li>Precision Farming</li>
               </ul>
             </div>
-            <div class="project-link"><a class="text-link"
-                href="https://github.com/rakeshbhakre/Intelligent-Traffic-Surveillance-System-" target="_blank"
-                rel="noreferrer">View source ↗</a><span class="project-note">College major project</span></div>
+            <div class="project-link">
+              <button class="drawer-toggle" type="button" aria-expanded="false" aria-controls="plant-drawer"
+                data-open-label="Research pipeline ↓" data-close-label="Close pipeline ↑">Research pipeline ↓</button>
+              <span class="project-note">Published in IRJET Journal</span>
+            </div>
+
+            <div class="system-drawer" id="plant-drawer" hidden>
+              <div class="drawer-head">
+                <span class="drawer-title">Plant Whisper · Interdisciplinary Sensing &amp; ML Pipeline</span>
+                <span class="drawer-meta">IRJET Published Research</span>
+              </div>
+              <div class="bench-grid bench-grid--three">
+                <div class="bench-cell">
+                  <span class="bench-label">01 Multi-Modal Stimuli</span>
+                  <div class="bench-value">Environmental IoT sensors track light, ambient temperature, soil moisture,
+                    acoustic sound, and proximity/human interaction.</div>
+                </div>
+                <div class="bench-cell">
+                  <span class="bench-label">02 Plant Signal Capture</span>
+                  <div class="bench-value">Real-time data acquisition logs subtle biochemical and electrical plant
+                    response variations under changing environmental stress.</div>
+                </div>
+                <div class="bench-cell">
+                  <span class="bench-label">03 Predictive Health ML</span>
+                  <div class="bench-value">Supervised machine-learning models classify stress states early for precision
+                    agriculture and automated smart gardening.</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project project--compact" id="project-kisan" aria-labelledby="kisan-title"
+            data-domains="languages,llm,systems" data-reveal>
+            <div class="project-meta"><span class="project-no">APPLIED AI 04</span><span
+                class="project-period">Multilingual AI</span></div>
+            <div class="project-copy">
+              <h3 id="kisan-title">Kisan GPT</h3>
+              <p><strong>Multilingual AI agricultural assistant.</strong> Built a conversational assistant delivering
+                crop advisory, fertilizer and pest guidance, real-time weather updates, and government scheme
+                information to farmers in <strong>Hindi, Marathi, and English</strong> via text or voice — integrating
+                translation and speech APIs for seamless multimodal interaction.</p>
+              <ul class="tag-list" aria-label="Kisan GPT technologies">
+                <li>Python</li>
+                <li>Hugging Face Transformers</li>
+                <li>LangChain</li>
+                <li>Streamlit</li>
+                <li>Speech &amp; Translation APIs</li>
+              </ul>
+            </div>
+            <div class="project-link"><span class="project-note">Hindi · Marathi · English · Voice &amp; Text</span>
+            </div>
+          </article>
+
+          <article class="project project--compact" id="project-legal" aria-labelledby="legal-title"
+            data-domains="languages,llm,foundations" data-reveal>
+            <div class="project-meta"><span class="project-no">APPLIED AI 05</span><span class="project-period">NLP
+                &amp; RAG</span></div>
+            <div class="project-copy">
+              <h3 id="legal-title">AI Legal Document Checker</h3>
+              <p><strong>Automated clause, risk, and compliance review.</strong> Built an NLP system that reviews legal
+                documents for grammatical errors, ambiguous or missing clauses, and compliance issues against standard
+                templates — combining LLMs (GPT/BERT), Named Entity Recognition (NER), text classification, and RAG to
+                flag risks and generate correction suggestions.</p>
+              <ul class="tag-list" aria-label="AI Legal Document Checker technologies">
+                <li>Python</li>
+                <li>LLMs (GPT / BERT)</li>
+                <li>NER</li>
+                <li>RAG</li>
+                <li>Text Classification</li>
+              </ul>
+            </div>
+            <div class="project-link"><span class="project-note">Template compliance &amp; risk flagging</span></div>
           </article>
         </div>
       </div>
@@ -1228,41 +1696,69 @@
             <p class="section-index">03 / Technical specifications</p>
             <h2 id="skills-title">Tools I work with.</h2>
           </div>
-          <p class="section-intro">Grouped by the work they support, rather than as a flat keyword list.</p>
+          <p class="section-intro">Grouped by the engineering and research workflows they support, rather than as a flat
+            keyword list.</p>
         </div>
         <div class="technical-grid">
           <div class="technical-copy">
-            <p>My strongest foundation is backend and full-stack application development. I use Java and data structures
-              for core problem solving, and have also built Python-based computer-vision and anomaly-detection systems.
-            </p>
-            <p>Project details above show where these tools were applied.</p>
+            <p>My strongest focus is applied machine learning, computer vision, and large language model systems. I work
+              primarily in Python and Java, backed by core computer-science foundations in data structures, algorithms,
+              object-oriented design, and databases.</p>
+            <p>Select any specification row to trace where those tools were applied across projects and research.</p>
+            <div class="trace-panel" aria-live="polite">
+              <span class="trace-label" id="trace-heading">Applied in · Languages</span>
+              <p class="trace-text" id="trace-desc">Python powers every ML, computer-vision, and LLM system above; Java
+                and OOP anchor algorithmic problem solving.</p>
+              <div class="trace-links" id="trace-links">
+                <a class="trace-pill" href="#project-aegis">AEGIS ↗</a>
+                <a class="trace-pill" href="#project-gesture">Air-Hand Gesture ↗</a>
+                <a class="trace-pill" href="#project-plant">Plant Whisper ↗</a>
+                <a class="trace-pill" href="#project-kisan">Kisan GPT ↗</a>
+                <a class="trace-pill" href="#project-legal">Legal Checker ↗</a>
+              </div>
+            </div>
           </div>
-          <table class="spec-table">
+          <table class="spec-table" aria-label="Technical skills grouped by domain">
             <tbody>
-              <tr>
+              <tr class="is-selected" tabindex="0" data-domain="languages" data-title="Applied in · Languages"
+                data-desc="Python powers every ML, computer-vision, and LLM system above; Java and OOP anchor algorithmic problem solving."
+                data-refs="AEGIS:#project-aegis,Air-Hand Gesture:#project-gesture,Plant Whisper:#project-plant,Kisan GPT:#project-kisan,Legal Checker:#project-legal">
                 <th scope="row">Languages</th>
-                <td>Java, Python, JavaScript, C++</td>
+                <td>Python, Java</td>
               </tr>
-              <tr>
-                <th scope="row">Application</th>
-                <td>Spring Boot, React.js, Node.js, Express.js, REST APIs, API integration</td>
-              </tr>
-              <tr>
-                <th scope="row">Data</th>
-                <td>MongoDB, MySQL, SQLite, database design</td>
-              </tr>
-              <tr>
+              <tr tabindex="0" data-domain="vision" data-title="Applied in · AI, Vision &amp; ML"
+                data-desc="Used for contactless 21-point hand tracking, spacecraft anomaly detection, plant-health modeling, and real-time waste object detection."
+                data-refs="AEGIS:#project-aegis,Air-Hand Gesture:#project-gesture,Plant Whisper:#project-plant,Smart Waste ML:#recognition">
                 <th scope="row">AI and vision</th>
-                <td>YOLOv8, DeepSORT, EasyOCR, NumPy, scikit-learn, neural networks, anomaly detection</td>
+                <td>TensorFlow, OpenCV, MediaPipe, Machine Learning, Anomaly Detection, Real-Time Object Detection</td>
               </tr>
-              <tr>
-                <th scope="row">Delivery</th>
-                <td>Git, GitHub, Docker, Postman, asynchronous job processing</td>
+              <tr tabindex="0" data-domain="llm" data-title="Applied in · LLMs, NLP &amp; RAG"
+                data-desc="Applied in distributed LLaMA-2 inference research, multilingual farmer advisory, and RAG-based legal compliance review."
+                data-refs="LLM Research Internship:#experience,Kisan GPT:#project-kisan,AI Legal Checker:#project-legal">
+                <th scope="row">LLMs and NLP</th>
+                <td>LLMs (LLaMA-2, GPT, BERT), Hugging Face Transformers, LangChain, RAG, Named Entity Recognition (NER)
+                </td>
               </tr>
-              <tr>
+              <tr tabindex="0" data-domain="systems" data-title="Applied in · Serving, Benchmarking &amp; Apps"
+                data-desc="Deployed Ray + Locust distributed LLM benchmarking clusters and multimodal voice/text Streamlit interfaces."
+                data-refs="LLM Research Internship:#experience,Kisan GPT:#project-kisan,AWS Campus Ambassador:#experience">
+                <th scope="row">Serving &amp; cloud</th>
+                <td>Ray (llm-on-ray), Locust Benchmarking, Distributed Model Serving, Streamlit, Speech &amp;
+                  Translation APIs, AWS Cloud</td>
+              </tr>
+              <tr tabindex="0" data-domain="iot" data-title="Applied in · IoT &amp; Simulation"
+                data-desc="Built spacecraft fault-injection simulation with rule-based safety guards and multi-sensor plant biosignal acquisition."
+                data-refs="AEGIS Simulation:#project-aegis,Plant Whisper IoT:#project-plant">
+                <th scope="row">IoT &amp; simulation</th>
+                <td>IoT Environmental Sensors, Real-Time Telemetry Quality Checks, Fault-Injection Simulation,
+                  Rule-Based Guards</td>
+              </tr>
+              <tr tabindex="0" data-domain="foundations" data-title="Applied in · CS Foundations"
+                data-desc="Core B.E. AIML engineering coursework (8.5 / 10 CGPA) supporting structured system design and data modeling."
+                data-refs="B.E. AIML (8.5 CGPA):#experience,AEGIS:#project-aegis,AI Legal Checker:#project-legal">
                 <th scope="row">Foundations</th>
-                <td>Data structures and algorithms, object-oriented programming, DBMS, operating systems, computer
-                  networks</td>
+                <td>Data Structures &amp; Algorithms, Object-Oriented Programming (OOP), Database Management Systems
+                  (DBMS)</td>
               </tr>
             </tbody>
           </table>
@@ -1276,39 +1772,63 @@
         <div class="section-head" data-reveal>
           <div>
             <p class="section-index">04 / Experience</p>
-            <h2 id="experience-title">Build, coordinate, deliver.</h2>
+            <h2 id="experience-title">Research, lead, deliver.</h2>
           </div>
-          <p class="section-intro">Software work sits alongside experience coordinating people, logistics, and delivery
-            under live conditions.</p>
+          <p class="section-intro">Distributed LLM research and AI storytelling sit alongside campus cloud advocacy,
+            departmental R&amp;D leadership, and live event execution.</p>
         </div>
         <div class="timeline">
           <article class="timeline-item">
-            <div class="timeline-date">Jan 2025 – Jun 2025</div>
+            <div class="timeline-date">May 2025 – Jul 2025</div>
             <div class="timeline-body">
-              <h3>Software Developer Intern</h3>
-              <div class="timeline-org">Quibits · Navi Mumbai</div>
-              <p>Developed application features with Java, Spring Boot, and React.js; built REST APIs and responsive
-                reporting and user-management dashboards; debugged issues and collaborated through Git and Agile
-                practices.</p>
+              <h3>Intern – Large Language Models (LLMs)</h3>
+              <div class="timeline-org">College Research Internship · Mumbai University</div>
+              <p>Set up and deployed a Ray-based LLM benchmarking environment using Locust. Experimented with
+                <strong>LLaMA-2 integration</strong> and fine-tuned model inference for chat completion endpoints,
+                working with <strong>llm-on-ray</strong> configurations and optimizing compute nodes for distributed
+                model serving.</p>
             </div>
           </article>
           <article class="timeline-item">
-            <div class="timeline-date">Dec 2023 – May 2025</div>
+            <div class="timeline-date">Feb 2025 – Apr 2025</div>
             <div class="timeline-body">
-              <h3>Freelance Event Coordinator and Planner</h3>
-              <div class="timeline-org">Grandeur Events · Mumbai</div>
-              <p>Coordinated 100+ events for Amazon, Microsoft, and other clients. Led teams of 5–30 volunteers across
-                logistics, vendors, stakeholder communication, and on-site problem solving.</p>
+              <h3>Outreach Intern</h3>
+              <div class="timeline-org">Scroll Connect</div>
+              <p>Created Gen-Z focused technology and culture content, <strong>increasing engagement by 35%</strong>.
+                Researched emerging AI trends and simplified complex technical concepts for clear digital storytelling.
+              </p>
             </div>
           </article>
           <article class="timeline-item">
-            <div class="timeline-date">Education</div>
+            <div class="timeline-date">Leadership · Current</div>
             <div class="timeline-body">
-              <h3>Bachelor of Computer Science and Engineering</h3>
-              <div class="timeline-org">Indira Gandhi College of Engineering · Ghansoli · Autonomous institute
-                affiliated to Mumbai University</div>
-              <p>Core study areas include data structures and algorithms, object-oriented programming, databases,
-                operating systems, and computer networks.</p>
+              <h3>AWS Campus Ambassador &amp; Co-Lead, SparksCode</h3>
+              <div class="timeline-org">Amazon Web Services Campus Program &amp; College Technical Club · SIGCE</div>
+              <p>Represent AWS on campus to drive student engagement with cloud technologies, while serving as
+                <strong>Co-Lead of SparksCode</strong> to coordinate technical club initiatives, workshops, and peer
+                participation.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">Leadership · R&amp;D &amp; Events</div>
+            <div class="timeline-body">
+              <h3>Vice President, AIML R&amp;D Cell &amp; Fest Event Head</h3>
+              <div class="timeline-org">AIML Department · Smt. Indira Gandhi College of Engineering</div>
+              <p>Led departmental R&amp;D initiatives — including <strong>AI in Agriculture &amp; Healthcare</strong>
+                projects — and coordinated technical activities. Served as active volunteer, <strong>Event Head</strong>
+                for multiple technical and cultural fests, and stage anchor/host for college events and technical
+                symposiums.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">2023 – 2027</div>
+            <div class="timeline-body">
+              <h3>B.E., Artificial Intelligence &amp; Machine Learning (AIML)</h3>
+              <div class="timeline-org">Smt. Indira Gandhi College of Engineering · Mumbai University · CGPA: 8.5 / 10
+                (Third Year – Overall)</div>
+              <p>Undergraduate specialization in Artificial Intelligence and Machine Learning with an overall
+                <strong>8.5 / 10 CGPA</strong>, focused on Machine Learning, Large Language Models, Computer Vision,
+                Data Structures &amp; Algorithms, DBMS, and Object-Oriented Programming.</p>
             </div>
           </article>
         </div>
@@ -1316,39 +1836,53 @@
       </div>
     </section>
 
-    <section class="section" aria-labelledby="recognition-title">
+    <section class="section" id="recognition" aria-labelledby="recognition-title">
       <div class="wrap">
         <div class="section-head" data-reveal>
           <div>
             <p class="section-index">05 / Recognition</p>
             <h2 id="recognition-title">Results with context.</h2>
           </div>
-          <p class="section-intro">Competition outcomes and applied work, described with the project behind each result.
-          </p>
+          <p class="section-intro">Hackathon outcomes, published research, applied ML builds, and campus leadership,
+            paired with the work behind each distinction.</p>
         </div>
         <div class="achievements">
           <article class="achievement" data-reveal>
-            <p class="achievement-label">Winner · 2026</p>
-            <h3>Multiverse of Tech Hackathon</h3>
-            <p>Placed first among about 40 teams with a MERN application that estimates construction materials, cost,
-              and timeline from 3D models.</p>
+            <p class="achievement-label">Winner · Hackathon 2026</p>
+            <h3>AEGIS Spacecraft-Health Prototype</h3>
+            <p>Won first place building AEGIS — an explainable spacecraft-health monitoring prototype that detects
+              faults (29 of 40 simulated episodes, 5/5 wheel friction), ranks likely causes, and safety-checks
+              recommended responses.</p>
           </article>
           <article class="achievement" data-reveal>
-            <p class="achievement-label">First runner-up · 2026</p>
-            <h3>Hackverse Spacetech Hackathon</h3>
-            <p>Built AEGIS, a Python spacecraft-health monitor using Isolation Forest, NumPy autoencoders, anomaly
-              detection, explainable root-cause analysis, and safety-validated mitigation recommendations.</p>
+            <p class="achievement-label">Shortlisted · 2024</p>
+            <h3>Smart India Hackathon (SIH 2024)</h3>
+            <p>Shortlisted under the Smart Education theme for designing practical AI-assisted educational workflows in
+              India’s flagship national innovation competition.</p>
           </article>
           <article class="achievement" data-reveal>
-            <p class="achievement-label">Industry experience</p>
-            <h3>Six-month software internship</h3>
-            <p>At Quibits, built Java, Spring Boot, and React features, REST APIs, and responsive dashboards while
-              collaborating with a development team.</p>
+            <p class="achievement-label">Applied Computer Vision</p>
+            <h3>Smart Waste Segregation System</h3>
+            <p>Built an automated Smart Waste Segregation System using real-time machine-learning object detection to
+              classify and separate waste streams accurately.</p>
           </article>
           <article class="achievement" data-reveal>
-            <p class="achievement-label">Team leadership</p>
-            <h3>100+ live events coordinated</h3>
-            <p>Led volunteer teams of 5–30 and managed operations for Amazon, Microsoft, and other client events.</p>
+            <p class="achievement-label">Published Research · IRJET</p>
+            <h3>Journal &amp; National Conference Papers</h3>
+            <p>Published interdisciplinary Plant Whisper ML + IoT research in IRJET, and presented the Air-Hand Gesture
+              Recognition System at a national-level paper conference.</p>
+          </article>
+          <article class="achievement" data-reveal>
+            <p class="achievement-label">Cloud Advocacy · Current</p>
+            <h3>AWS Campus Ambassador</h3>
+            <p>Represent Amazon Web Services on campus, mentoring peers and driving student engagement with cloud
+              computing and modern AI infrastructure.</p>
+          </article>
+          <article class="achievement" data-reveal>
+            <p class="achievement-label">Campus Leadership</p>
+            <h3>VP of AIML R&amp;D Cell &amp; SparksCode Co-Lead</h3>
+            <p>Led departmental AI in Agriculture &amp; Healthcare R&amp;D initiatives, co-led SparksCode technical
+              club, headed multi-fest operations, and anchored technical symposiums.</p>
           </article>
         </div>
         <p class="section-action"><a class="text-link" href="#work">Explore the work behind these results ↗</a></p>
@@ -1360,40 +1894,206 @@
         <div>
           <p class="section-index">06 / Contact</p>
           <h2 id="contact-title">Let’s talk about the work.</h2>
-          <p class="contact-copy">For software engineering roles, project discussions, or a closer walkthrough of my
-            work, email is the most direct way to reach me.</p>
+          <p class="contact-copy">For AI/ML internships, software engineering roles, research collaborations, or a
+            closer walkthrough of my projects, email or phone is the most direct way to reach me.</p>
         </div>
-        <div class="contact-card"><span class="small-label">Email</span><a class="email-link"
-            href="mailto:rakeshbhakre00@gmail.com">rakeshbhakre00@gmail.com</a><a class="button"
-            href="mailto:rakeshbhakre00@gmail.com?subject=Software%20Engineering%20Opportunity">Email Rakesh <span
-              aria-hidden="true">↗</span></a>
-          <div class="social-links"><a href="https://www.linkedin.com/in/rakesh-bhakre/" target="_blank"
-              rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/rakeshbhakre" target="_blank"
-              rel="noreferrer">GitHub ↗</a></div>
+        <div class="contact-card">
+          <span class="small-label">Email</span>
+          <a class="email-link" href="mailto:swapnaliappajadhav@gmail.com">swapnaliappajadhav@gmail.com</a>
+          <span class="small-label">Phone</span>
+          <a class="phone-link" href="tel:+918779485517">+91 87794 85517</a>
+          <div class="contact-actions">
+            <a class="button"
+              href="mailto:swapnaliappajadhav@gmail.com?subject=AI%2FML%20Engineering%20Opportunity">Email Swapnali
+              <span aria-hidden="true">↗</span></a>
+            <a class="button secondary" href="./assets/Swapnali_Jadhav_Resume.pdf"
+              download="Swapnali_Jadhav_Resume.pdf">Résumé PDF <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="social-links">
+            <button class="copy-email-btn" type="button" data-email="swapnaliappajadhav@gmail.com">Copy email
+              address</button>
+            <a href="tel:+918779485517">Call +91 87794 85517</a>
+          </div>
         </div>
       </div>
     </section>
   </main>
+
   <footer class="site-footer">
-    <div class="wrap footer-row"><span>© 2026 Rakesh Bhakre · Navi Mumbai, India</span>
-      <nav class="footer-links" aria-label="Legal and social links"><a href="/privacy-policy">Privacy policy</a><a
-          href="/terms-of-service">Terms of service</a><a href="https://www.linkedin.com/in/rakesh-bhakre/"
-          target="_blank" rel="noreferrer">LinkedIn</a><a href="https://github.com/rakeshbhakre" target="_blank"
-          rel="noreferrer">GitHub</a></nav>
+    <div class="wrap footer-row"><span>© 2026 Swapnali Jadhav · Mumbai University · Navi Mumbai, India</span>
+      <nav class="footer-links" aria-label="Legal and contact links">
+        <a href="./privacy-policy/">Privacy policy</a>
+        <a href="./terms-of-service/">Terms of service</a>
+        <a href="./assets/Swapnali_Jadhav_Resume.pdf" download="Swapnali_Jadhav_Resume.pdf">Résumé</a>
+        <a href="mailto:swapnaliappajadhav@gmail.com">Email</a>
+      </nav>
     </div>
   </footer>
+
   <script>
     (() => {
+      // 1. Hero AEGIS Interactive Pipeline Map (click + SVG node click + arrow keys)
       const steps = [...document.querySelectorAll('.flow-step')];
       const caption = document.querySelector('.flow-caption');
+      const spec = document.querySelector('.flow-spec');
+      const progressPath = document.querySelector('.flow-progress');
       const nodes = [...document.querySelectorAll('.flow-node')];
-      steps.forEach((button) => {
-        button.addEventListener('click', () => {
-          steps.forEach((step) => step.setAttribute('aria-pressed', String(step === button)));
-          nodes.forEach((node) => node.classList.toggle('is-active', node.dataset.node === button.dataset.step));
-          caption.textContent = button.dataset.copy;
+
+      const activateStep = (index) => {
+        const button = steps[index];
+        if (!button) return;
+        steps.forEach((step, idx) => step.setAttribute('aria-pressed', String(idx === index)));
+        nodes.forEach((node, idx) => {
+          node.classList.toggle('is-active', idx === index);
+          node.classList.toggle('is-passed', idx <= index);
+        });
+        if (caption) caption.textContent = button.dataset.copy;
+        if (spec) spec.textContent = button.dataset.spec;
+        if (progressPath && button.dataset.progress !== undefined) {
+          progressPath.style.strokeDashoffset = button.dataset.progress;
+        }
+      };
+
+      steps.forEach((button, index) => {
+        button.addEventListener('click', () => activateStep(index));
+        button.addEventListener('keydown', (event) => {
+          if (event.key !== 'ArrowRight' && event.key !== 'ArrowLeft') return;
+          event.preventDefault();
+          const next = event.key === 'ArrowRight'
+            ? (index + 1) % steps.length
+            : (index - 1 + steps.length) % steps.length;
+          steps[next].focus();
+          activateStep(next);
         });
       });
+
+      nodes.forEach((node, index) => {
+        node.addEventListener('click', () => activateStep(index));
+      });
+
+      // 2. Expandable Project Architecture & Simulation Drawers
+      document.querySelectorAll('.drawer-toggle').forEach((toggle) => {
+        toggle.addEventListener('click', () => {
+          const targetId = toggle.getAttribute('aria-controls');
+          const drawer = targetId ? document.getElementById(targetId) : null;
+          if (!drawer) return;
+          const willOpen = drawer.hasAttribute('hidden');
+          drawer.toggleAttribute('hidden', !willOpen);
+          toggle.setAttribute('aria-expanded', String(willOpen));
+          toggle.textContent = willOpen ? toggle.dataset.closeLabel : toggle.dataset.openLabel;
+        });
+      });
+
+      // 3. AEGIS Saved Fault-Injection Simulation Scenarios
+      const aegisEpisodes = {
+        wheel: {
+          detect: 'Wheel speed lag paired with elevated motor power draw while bus voltage remains nominal.',
+          explain: 'Ranked #1: Reaction-wheel bearing friction. Matched: wheel speed, power. Contradicting channels: none.',
+          recommend: 'Candidate selected from predefined action library: wheel momentum unload and backup wheel transition.',
+          guard: 'Approved after attitude-rate and power-margin safety constraints pass independent guard rules.'
+        },
+        quality: {
+          detect: 'Single-channel stale timestamp and high-frequency noise spike flagged by telemetry-quality gate.',
+          explain: 'Data-quality issue isolated upfront so degraded sensor packets are not mistaken for hardware failure.',
+          recommend: 'Hold hardware actuation; flag telemetry channel health and fall back to cross-sensor validation.',
+          guard: 'Blocked hardware fault reconfiguration — rule-based guard prevents action on unverified sensor streams.'
+        },
+        power: {
+          detect: 'Correlated battery voltage sag and localized temperature rise detected across statistical + ML checks.',
+          explain: 'Ranked #1: Power-bus thermal load anomaly, ranked using multi-channel matched vs. contradicting evidence.',
+          recommend: 'Recommend non-essential payload duty-cycle reduction from the predefined spacecraft action library.',
+          guard: 'Approved after verifying thermal headroom and core avionics minimum power budget.'
+        }
+      };
+
+      const episodeButtons = [...document.querySelectorAll('.episode-tab')];
+      const readout = document.getElementById('aegis-readout');
+      episodeButtons.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const data = aegisEpisodes[btn.dataset.episode];
+          if (!data || !readout) return;
+          episodeButtons.forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+          Object.entries(data).forEach(([field, text]) => {
+            const el = readout.querySelector(`[data-field="${field}"]`);
+            if (el) el.textContent = text;
+          });
+        });
+      });
+
+      // 4. Interactive Technical Specifications -> Project Cross-Reference
+      const specRows = [...document.querySelectorAll('.spec-table tbody tr[data-domain]')];
+      const traceHeading = document.getElementById('trace-heading');
+      const traceDesc = document.getElementById('trace-desc');
+      const traceLinks = document.getElementById('trace-links');
+      const projects = [...document.querySelectorAll('.project[data-domains]')];
+
+      const selectSpecRow = (row) => {
+        const domain = row.dataset.domain;
+        specRows.forEach((r) => r.classList.toggle('is-selected', r === row));
+        if (traceHeading) traceHeading.textContent = row.dataset.title || '';
+        if (traceDesc) traceDesc.textContent = row.dataset.desc || '';
+        if (traceLinks && row.dataset.refs) {
+          traceLinks.innerHTML = '';
+          row.dataset.refs.split(',').forEach((pair) => {
+            const [label, href] = pair.split(':');
+            if (!label || !href) return;
+            const link = document.createElement('a');
+            link.className = 'trace-pill';
+            link.href = href;
+            link.textContent = `${label} ↗`;
+            traceLinks.appendChild(link);
+          });
+        }
+        projects.forEach((project) => {
+          const list = (project.dataset.domains || '').split(',');
+          project.classList.toggle('is-highlighted', list.includes(domain));
+        });
+      };
+
+      specRows.forEach((row) => {
+        row.addEventListener('click', () => selectSpecRow(row));
+        row.addEventListener('keydown', (event) => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            selectSpecRow(row);
+          }
+        });
+      });
+
+      // 5. One-Click Copy Email Button
+      const copyBtn = document.querySelector('.copy-email-btn');
+      if (copyBtn && navigator.clipboard) {
+        copyBtn.addEventListener('click', async () => {
+          try {
+            await navigator.clipboard.writeText(copyBtn.dataset.email || '');
+            const original = copyBtn.textContent;
+            copyBtn.textContent = 'Copied email ✓';
+            setTimeout(() => { copyBtn.textContent = original; }, 1800);
+          } catch (_) {
+            window.location.href = `mailto:${copyBtn.dataset.email || ''}`;
+          }
+        });
+      }
+
+      // 6. Active Section Navigation Highlight & One-Time Scroll Reveals
+      const navLinks = [...document.querySelectorAll('.nav-links a[href^="#"]')];
+      if ('IntersectionObserver' in window) {
+        const sectionObserver = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            const id = `#${entry.target.id}`;
+            navLinks.forEach((link) => {
+              if (link.getAttribute('href') === id) {
+                link.setAttribute('aria-current', 'location');
+              } else {
+                link.removeAttribute('aria-current');
+              }
+            });
+          });
+        }, { rootMargin: '-35% 0px -55% 0px' });
+
+        document.querySelectorAll('main section[id]').forEach((sec) => sectionObserver.observe(sec));
+      }
 
       const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       if (reducedMotion || !('IntersectionObserver' in window)) return;
