@@ -10,8 +10,9 @@
   Python · Java · TensorFlow · OpenCV · MediaPipe · LangChain · RAG · Ray
 </p>
 <p>
+  <a href="https://swapnali-jadhav.vercel.app"><img src="https://img.shields.io/badge/Portfolio-Visit-505A3D?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
   <a href="mailto:swapnaliappajadhav@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Swapnali" /></a>
-  <a href="./assets/Swapnali_Jadhav_Resume.pdf"><img src="https://img.shields.io/badge/R%C3%A9sum%C3%A9-Download%20PDF-505A3D?style=for-the-badge" alt="Download Resume" /></a>
+  <a href="./assets/Swapnali_Jadhav_Resume.pdf"><img src="https://img.shields.io/badge/R%C3%A9sum%C3%A9-Download%20PDF-1E1E1E?style=for-the-badge" alt="Download Resume" /></a>
 </p>
 
 **I build applied AI systems grounded in real-world signals — from explainable spacecraft fault diagnostics to contactless vision interfaces, biosignal ML, and multilingual LLM workflows.**
