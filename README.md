@@ -3,20 +3,21 @@
 <h1 align="center">Rakesh Bhakre</h1>
 
 <h3 align="center">
-  Software Engineer | Backend & Full-Stack Development
+  Software Engineer | Backend &amp; Full-Stack Development
 </h3>
 
 <p align="center">
   Java · Spring Boot · React · Node.js · Application Security · Applied AI
 </p>
-<p>
+
+<p align="center">
   <a href="https://rakeshbhakre.in"><img src="https://img.shields.io/badge/Portfolio-Visit-58A6FF?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
   <a href="https://www.linkedin.com/in/rakesh-bhakre/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="https://github.com/rakeshbhakre"><img src="https://img.shields.io/badge/GitHub-Explore-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+  <a href="https://github.com/rakeshbhakre"><img src="https://img.shields.io/badge/GitHub-Explore-30363d?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
   <a href="mailto:rakeshbhakre00@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 </p>
 
-**I build software that solves real workflow problems — from full-stack products to security tooling and applied AI.**
+**I build software that solves real workflow problems, from full-stack products to security tooling and applied AI.**
 
 </div>
 
@@ -30,7 +31,7 @@ I'm a 2026 Computer Science and Engineering graduate with hands-on experience in
 - **Application security:** Worked on GARUDX, a platform for source-code vulnerability scanning, dependency analysis, and hardcoded-secret detection.
 - **Computer vision:** Built a traffic-surveillance system using YOLOv8, DeepSORT, and OCR, resulting in published research.
 - **Hackathons:** Winner of the Multiverse of Tech Hackathon and 1st Runner-Up at Hackverse Spacetech 2026.
-- **Outside software:** Coordinated 100+ events, working with teams of 5–30 people and clients including Amazon and Microsoft.
+- **Outside software:** Coordinated 100+ events, working with teams of 5 to 30 people and clients including Amazon and Microsoft.
 
 I'm particularly interested in **backend and full-stack engineering**, and I keep sharpening my Java, Data Structures and Algorithms, and software design fundamentals.
 
@@ -62,7 +63,7 @@ I'm particularly interested in **backend and full-stack engineering**, and I kee
 
 ## Featured Projects
 
-### 1. GARUDX — Application Security Platform
+### 1. GARUDX: Application Security Platform
 
 A full-stack security platform developed to bring source-code security checks into one workflow. GARUDX automates vulnerability scanning, dependency analysis, and hardcoded-secret detection, then presents findings through a web dashboard.
 
@@ -74,7 +75,7 @@ A full-stack security platform developed to bring source-code security checks in
 **Tech:** React.js · Node.js · Express.js · MongoDB · Semgrep · OSV-Scanner · Gitleaks
 
 <p>
-  <a href="https://securityloyals.com/products/garudx">
+  <a href="https://garudx.in">
     <img src="https://img.shields.io/badge/Explore-GARUDX-58A6FF?style=for-the-badge" alt="Explore GARUDX" />
   </a>
 </p>
@@ -86,7 +87,7 @@ A computer-vision system that analyzes CCTV/RTSP video and detects five traffic 
 **Highlights**
 - Used YOLOv8 and DeepSORT for vehicle detection and tracking.
 - Combined homography-based speed estimation, HSV signal detection, and EasyOCR.
-- Reported **18–22 FPS on CPU** and approximately **3.2 km/h speed-estimation error** in the project evaluation.
+- Reported **18-22 FPS on CPU** and approximately **3.2 km/h speed-estimation error** in the project evaluation.
 - Developed a FastAPI backend with SQLite storage.
 - Published research based on the project.
 
@@ -94,15 +95,13 @@ A computer-vision system that analyzes CCTV/RTSP video and detects five traffic 
 
 <p>
   <a href="https://github.com/rakeshbhakre/Intelligent-Traffic-Surveillance-System-">
-    <img src="https://img.shields.io/badge/View%20Source-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="Traffic surveillance source code" />
+    <img src="https://img.shields.io/badge/View%20Source-GitHub-30363d?style=for-the-badge&logo=github&logoColor=white" alt="Traffic surveillance source code" />
   </a>
 </p>
 
-### 3. RestoQR — Restaurant Ordering & Operations Platform
+### 3. RestoQR: Restaurant Ordering & Operations Platform
 
-A live restaurant platform connecting customer QR ordering with kitchen operations, cashier/POS workflows, billing, inventory, and administration.
-
-My work has focused on improving end-to-end workflows across customer, kitchen, cashier, and management operations, reducing manual steps and improving operational efficiency.
+A live restaurant platform connecting customer QR ordering with kitchen operations, cashier/POS workflows, billing, inventory, and administration. My work has focused on end-to-end workflows across customer, kitchen, cashier, and management operations, reducing manual steps.
 
 **Product Areas:** QR Ordering · Kitchen Operations · POS and Billing · Inventory · Administration
 
@@ -112,7 +111,7 @@ My work has focused on improving end-to-end workflows across customer, kitchen, 
   </a>
 </p>
 
-### 4. AEGIS — Spacecraft Health Monitoring
+### 4. AEGIS: Spacecraft Health Monitoring
 
 Developed for **Hackverse Spacetech 2026**, AEGIS explores spacecraft health monitoring through anomaly detection and explainable diagnostics.
 
@@ -142,12 +141,12 @@ The project won the **Multiverse of Tech Hackathon** among approximately 40 comp
 
 ## Experience
 
-### Software Developer Intern — Quibits
+### Software Developer Intern, Quibits
 
-**January 2025 – June 2025 · Navi Mumbai, Maharashtra**
+**January 2025 - June 2025 · Navi Mumbai, Maharashtra**
 
 - Developed full-stack application features using Java, Spring Boot, and React.js.
-- Engineered RESTful APIs for reliable frontend–backend integration.
+- Engineered RESTful APIs for reliable frontend-backend integration.
 - Built responsive dashboards for reporting and user management.
 - Debugged application issues and collaborated with developers using Git and Agile practices.
 
@@ -157,27 +156,27 @@ The project won the **Multiverse of Tech Hackathon** among approximately 40 comp
   </a>
 </p>
 
-### Freelance Event Coordinator & Planner — Grandeur Events
+### Freelance Event Coordinator & Planner, Grandeur Events
 
-**December 2023 – May 2025 · Mumbai, Maharashtra**
+**December 2023 - May 2025 · Mumbai, Maharashtra**
 
 - Coordinated **100+ events**, managing logistics, vendors, and on-ground execution.
-- Led teams of 5–30 volunteers and handled stakeholder communication and resource allocation.
+- Led teams of 5 to 30 volunteers and handled stakeholder communication and resource allocation.
 - Supported events for clients including Amazon and Microsoft.
 
 ---
 
 ## Education & Achievements
 
-**Bachelor of Computer Science and Engineering — 2026**
+**Bachelor of Computer Science and Engineering, 2026**
 
 Smt. Indira Gandhi College of Engineering, Ghansoli  
 Autonomous Institute affiliated with the University of Mumbai.
 
 **Hackathon Achievements**
 
-- **Winner — Multiverse of Tech Hackathon, 2026:** MERN-based construction cost and timeline estimator; approximately 40 competing teams.
-- **1st Runner-Up — Hackverse Spacetech Hackathon, 2026:** AEGIS spacecraft health-monitoring project.
+- **Winner, Multiverse of Tech Hackathon 2026:** MERN-based construction cost and timeline estimator; approximately 40 competing teams.
+- **1st Runner-Up, Hackverse Spacetech Hackathon 2026:** AEGIS spacecraft health-monitoring project.
 
 **Research**
 
@@ -189,11 +188,12 @@ Autonomous Institute affiliated with the University of Mumbai.
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=rakeshbhakre&show_icons=true&theme=github_dark&hide_border=true" alt="GitHub profile statistics" />
+<img src="https://komarev.com/ghpvc/?username=rakeshbhakre&label=Profile%20views&color=58A6FF&style=for-the-badge" alt="Profile views" />
+<img src="https://img.shields.io/github/followers/rakeshbhakre?label=Followers&style=for-the-badge&logo=github&color=58A6FF" alt="GitHub followers" />
+
+<br/><br/>
 
 <img height="165" src="https://streak-stats.demolab.com?user=rakeshbhakre&theme=github-dark-blue&hide_border=true" alt="GitHub contribution streak" />
-
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rakeshbhakre&layout=compact&theme=github_dark&hide_border=true&langs_count=8" alt="Most-used programming languages" />
 
 </div>
 
@@ -212,7 +212,7 @@ I'm interested in meaningful software engineering problems, collaborative produc
   <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
 </a>
 <a href="https://github.com/rakeshbhakre">
-  <img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  <img src="https://img.shields.io/badge/GitHub-Follow-30363d?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
 </a>
 <a href="mailto:rakeshbhakre00@gmail.com">
   <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
